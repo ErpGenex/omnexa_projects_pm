@@ -1,0 +1,29 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:ISS-{YYYY}-{#####}",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": ["project", "schedule_section", "related_wbs_task", "issue_title", "severity", "owner_user", "due_date", "status", "description", "company", "branch"],
+ "fields": [
+  {"fieldname": "project", "fieldtype": "Link", "label": "Project Contract", "options": "Project Contract", "reqd": 1, "in_list_view": 1},
+  {"fieldname": "schedule_section", "fieldtype": "Section Break", "label": "Schedule Integration"},
+  {"fieldname": "related_wbs_task", "fieldtype": "Link", "label": "Related WBS Task", "options": "PM WBS Task", "description": "Optional WBS task affected by this issue."},
+  {"fieldname": "issue_title", "fieldtype": "Data", "label": "Issue Title", "reqd": 1, "in_list_view": 1},
+  {"fieldname": "severity", "fieldtype": "Select", "label": "Severity", "options": "Low\nMedium\nHigh\nCritical", "default": "Medium", "in_list_view": 1},
+  {"fieldname": "owner_user", "fieldtype": "Link", "label": "Owner", "options": "User", "in_list_view": 1},
+  {"fieldname": "due_date", "fieldtype": "Date", "label": "Due Date"},
+  {"fieldname": "status", "fieldtype": "Select", "label": "Status", "options": "Open\nIn Progress\nEscalated\nClosed", "default": "Open", "reqd": 1, "in_list_view": 1},
+  {"fieldname": "description", "fieldtype": "Small Text", "label": "Description"},
+  {"fieldname": "company", "fieldtype": "Link", "label": "Company", "options": "Company", "reqd": 1, "in_list_view": 1},
+  {"fieldname": "branch", "fieldtype": "Link", "label": "Branch", "options": "Branch", "reqd": 1, "in_list_view": 1}
+ ],
+ "module": "Omnexa Projects PM",
+ "name": "PM Issue Log",
+ "permissions": [
+  {"role": "System Manager", "read": 1, "write": 1, "create": 1, "delete": 1, "report": 1, "export": 1, "share": 1},
+  {"role": "Project Manager", "read": 1, "write": 1, "create": 1, "delete": 0, "report": 1, "export": 1}
+ ],
+ "track_changes": 1
+}
+

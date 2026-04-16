@@ -1,0 +1,17 @@
+{
+ "actions": [],
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": ["dependency_type", "depends_on_task", "lag_days"],
+ "fields": [
+  {"fieldname": "dependency_type", "fieldtype": "Select", "label": "Dependency Type", "options": "FS\nSS\nFF\nSF", "default": "FS", "reqd": 1, "in_list_view": 1},
+  {"fieldname": "depends_on_task", "fieldtype": "Link", "label": "Depends On Task", "options": "PM WBS Task", "reqd": 1, "in_list_view": 1},
+  {"fieldname": "lag_days", "fieldtype": "Int", "label": "Lag (Days)", "default": "0", "description": "Calendar days added in the CPM forward pass after the predecessor bound (e.g. FS + 2: successor starts 2 days after predecessor finish)."}
+ ],
+ "istable": 1,
+ "module": "Omnexa Projects PM",
+ "name": "PM Task Dependency",
+ "permissions": []
+}
+

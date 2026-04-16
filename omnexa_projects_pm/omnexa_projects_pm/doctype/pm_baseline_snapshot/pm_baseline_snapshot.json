@@ -1,0 +1,28 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:BLS-{YYYY}-{#####}",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": ["project", "baseline_date", "planned_duration_days", "actual_duration_days", "planned_budget", "actual_cost", "schedule_variance_days", "cost_variance", "company", "branch"],
+ "fields": [
+  {"fieldname": "project", "fieldtype": "Link", "label": "Project Contract", "options": "Project Contract", "reqd": 1, "in_list_view": 1},
+  {"fieldname": "baseline_date", "fieldtype": "Date", "label": "Baseline Date", "reqd": 1, "in_list_view": 1},
+  {"fieldname": "planned_duration_days", "fieldtype": "Int", "label": "Planned Duration (Days)", "default": "0"},
+  {"fieldname": "actual_duration_days", "fieldtype": "Int", "label": "Actual Duration (Days)", "default": "0"},
+  {"fieldname": "planned_budget", "fieldtype": "Currency", "label": "Planned Budget", "default": "0"},
+  {"fieldname": "actual_cost", "fieldtype": "Currency", "label": "Actual Cost", "default": "0"},
+  {"fieldname": "schedule_variance_days", "fieldtype": "Int", "label": "Schedule Variance (Days)", "read_only": 1},
+  {"fieldname": "cost_variance", "fieldtype": "Currency", "label": "Cost Variance", "read_only": 1},
+  {"fieldname": "company", "fieldtype": "Link", "label": "Company", "options": "Company", "reqd": 1, "in_list_view": 1},
+  {"fieldname": "branch", "fieldtype": "Link", "label": "Branch", "options": "Branch", "reqd": 1, "in_list_view": 1}
+ ],
+ "module": "Omnexa Projects PM",
+ "name": "PM Baseline Snapshot",
+ "permissions": [
+  {"role": "System Manager", "read": 1, "write": 1, "create": 1, "delete": 1, "report": 1, "export": 1},
+  {"role": "Project Manager", "read": 1, "write": 1, "create": 1, "delete": 0, "report": 1, "export": 1}
+ ],
+ "track_changes": 1
+}
+

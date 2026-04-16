@@ -1,0 +1,52 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:PRA-{YYYY}-{#####}",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "project",
+  "pm_wbs_task",
+  "resource_type",
+  "user",
+  "resource_label",
+  "unit_of_measure",
+  "planned_units",
+  "actual_units",
+  "planned_hours",
+  "actual_hours",
+  "from_date",
+  "to_date",
+  "notes",
+  "company",
+  "branch"
+ ],
+ "fields": [
+  {"fieldname": "project", "fieldtype": "Link", "label": "Project Contract", "options": "Project Contract", "reqd": 1, "in_list_view": 1},
+  {"fieldname": "pm_wbs_task", "fieldtype": "Link", "label": "PM WBS Task", "options": "PM WBS Task", "description": "Optional task this allocation supports."},
+  {"fieldname": "resource_type", "fieldtype": "Select", "label": "Resource Type", "options": "Human\nEquipment\nMaterial\nOther", "reqd": 1, "default": "Human", "in_list_view": 1},
+  {"fieldname": "user", "fieldtype": "Link", "label": "User", "options": "User", "description": "Internal person when resource is Human."},
+  {"fieldname": "resource_label", "fieldtype": "Data", "label": "Resource Name", "description": "Equipment ID, material description, or external person name."},
+  {"fieldname": "unit_of_measure", "fieldtype": "Data", "label": "Unit of Measure", "description": "e.g. hours, days, ton, shift."},
+  {"fieldname": "planned_units", "fieldtype": "Float", "label": "Planned Units", "default": "0"},
+  {"fieldname": "actual_units", "fieldtype": "Float", "label": "Actual Units", "default": "0"},
+  {"fieldname": "planned_hours", "fieldtype": "Float", "label": "Planned Hours", "default": "0", "description": "Normalized effort for loading views (optional if using units only)."},
+  {"fieldname": "actual_hours", "fieldtype": "Float", "label": "Actual Hours", "default": "0"},
+  {"fieldname": "from_date", "fieldtype": "Date", "label": "From Date", "in_list_view": 1},
+  {"fieldname": "to_date", "fieldtype": "Date", "label": "To Date", "in_list_view": 1},
+  {"fieldname": "notes", "fieldtype": "Small Text", "label": "Notes"},
+  {"fieldname": "company", "fieldtype": "Link", "label": "Company", "options": "Company", "reqd": 1, "in_list_view": 1},
+  {"fieldname": "branch", "fieldtype": "Link", "label": "Branch", "options": "Branch", "reqd": 1, "in_list_view": 1}
+ ],
+ "index_web_pages_for_search": 0,
+ "links": [],
+ "module": "Omnexa Projects PM",
+ "name": "PM Resource Assignment",
+ "permissions": [
+  {"role": "System Manager", "read": 1, "write": 1, "create": 1, "delete": 1, "report": 1, "export": 1},
+  {"role": "Project Manager", "read": 1, "write": 1, "create": 1, "delete": 0, "report": 1, "export": 1}
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
