@@ -1,0 +1,41 @@
+{
+ "allow_roles": [
+  {
+   "role": "Desk User"
+  },
+  {
+   "role": "System Manager"
+  }
+ ],
+ "creation": "2026-04-20 00:31:42.423426",
+ "docstatus": 0,
+ "doctype": "Module Onboarding",
+ "documentation_url": "https://frappe.io/framework",
+ "idx": 0,
+ "is_complete": 0,
+ "modified": "2026-04-20 02:24:47.881848",
+ "modified_by": "Administrator",
+ "module": "Omnexa Projects PM",
+ "name": "ERPGENEX \u2014 projects",
+ "owner": "Administrator",
+ "steps": [
+  {
+   "step": "ERPGENEX-WS-projects-01-user_branch_access"
+  },
+  {
+   "step": "ERPGENEX-WS-projects-02-project_contract"
+  },
+  {
+   "step": "ERPGENEX-WS-projects-03-pm_wbs_task"
+  },
+  {
+   "step": "ERPGENEX-WS-projects-04-pm_milestone"
+  },
+  {
+   "step": "ERPGENEX-WS-projects-home"
+  }
+ ],
+ "subtitle": "Guided setup for this workspace.",
+ "success_message": "You are ready to work in projects.",
+ "title": "ERPGENEX \u00b7 projects"
+}

@@ -1,6 +1,6 @@
 {
  "charts": [],
- "content": "[{\"id\":\"p-h\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Projects</b></span>\",\"col\":12}},{\"id\":\"p-c1\",\"type\":\"card\",\"data\":{\"card_name\":\"Planning & Risk\",\"col\":4}},{\"id\":\"p-c2\",\"type\":\"card\",\"data\":{\"card_name\":\"Execution\",\"col\":4}},{\"id\":\"p-c3\",\"type\":\"card\",\"data\":{\"card_name\":\"Baseline & KPIs\",\"col\":4}},{\"id\":\"p-c4\",\"type\":\"card\",\"data\":{\"card_name\":\"Resources\",\"col\":4}},{\"id\":\"p-c5\",\"type\":\"card\",\"data\":{\"card_name\":\"Project Reports\",\"col\":4}},{\"id\":\"p-c6\",\"type\":\"card\",\"data\":{\"card_name\":\"AEC Suite\",\"col\":4}}]",
+ "content": "[{\"id\": \"erpgenex-onboarding\", \"type\": \"onboarding\", \"data\": {\"onboarding_name\": \"ERPGENEX — Projects\", \"col\": 12}}, {\"id\": \"p-h\", \"type\": \"header\", \"data\": {\"text\": \"<span class=\\\"h4\\\"><b>Projects</b></span>\", \"col\": 12}}, {\"id\": \"p-c1\", \"type\": \"card\", \"data\": {\"card_name\": \"Planning & Risk\", \"col\": 4}}, {\"id\": \"p-c2\", \"type\": \"card\", \"data\": {\"card_name\": \"Execution\", \"col\": 4}}, {\"id\": \"p-c3\", \"type\": \"card\", \"data\": {\"card_name\": \"Baseline & KPIs\", \"col\": 4}}, {\"id\": \"p-c4\", \"type\": \"card\", \"data\": {\"card_name\": \"Resources\", \"col\": 4}}, {\"id\": \"p-c5\", \"type\": \"card\", \"data\": {\"card_name\": \"Project Reports\", \"col\": 4}}, {\"id\": \"p-c6\", \"type\": \"card\", \"data\": {\"card_name\": \"AEC Suite\", \"col\": 4}}]",
  "custom_blocks": [],
  "docstatus": 0,
  "doctype": "Workspace",
@@ -10,25 +10,141 @@
  "is_hidden": 0,
  "label": "Projects",
  "links": [
-  {"hidden": 0, "label": "Planning & Risk", "type": "Card Break"},
-  {"hidden": 0, "icon": "briefcase", "label": "Project Contract", "link_to": "Project Contract", "link_type": "DocType", "type": "Link"},
-  {"hidden": 0, "icon": "list", "label": "PM WBS Task", "link_to": "PM WBS Task", "link_type": "DocType", "type": "Link"},
-  {"hidden": 0, "icon": "flag", "label": "PM Milestone", "link_to": "PM Milestone", "link_type": "DocType", "type": "Link"},
-  {"hidden": 0, "icon": "shield", "label": "Risk Register", "link_to": "Risk Register", "link_type": "DocType", "type": "Link"},
-  {"hidden": 0, "label": "Execution", "type": "Card Break"},
-  {"hidden": 0, "icon": "alert-triangle", "label": "PM Issue Log", "link_to": "PM Issue Log", "link_type": "DocType", "type": "Link"},
-  {"hidden": 0, "icon": "gantt", "label": "PM Schedule (Gantt)", "link_to": "pm_schedule_gantt", "link_type": "Page", "type": "Link"},
-  {"hidden": 0, "label": "Baseline & KPIs", "type": "Card Break"},
-  {"hidden": 0, "icon": "clock", "label": "PM Baseline Snapshot", "link_to": "PM Baseline Snapshot", "link_type": "DocType", "type": "Link"},
-  {"hidden": 0, "icon": "activity", "label": "PM KPI Snapshot", "link_to": "PM KPI Snapshot", "link_type": "DocType", "type": "Link"},
-  {"hidden": 0, "label": "Resources", "type": "Card Break"},
-  {"hidden": 0, "icon": "users", "label": "PM Resource Assignment", "link_to": "PM Resource Assignment", "link_type": "DocType", "type": "Link"},
-  {"hidden": 0, "label": "Project Reports", "type": "Card Break"},
-  {"hidden": 0, "icon": "git-merge", "is_query_report": 1, "label": "PM CPM Groundwork", "link_to": "PM CPM Groundwork", "link_type": "Report", "type": "Link"},
-  {"hidden": 0, "icon": "trending-up", "label": "PM Resource Loading", "link_to": "PM Resource Loading", "link_type": "Report", "type": "Link"},
-  {"hidden": 0, "label": "AEC Suite", "type": "Card Break"},
-  {"hidden": 0, "icon": "list", "label": "BOQ Item", "link_to": "BOQ Item", "link_type": "DocType", "type": "Link"},
-  {"hidden": 0, "icon": "map", "label": "Engineering Stage", "link_to": "Engineering Stage", "link_type": "DocType", "type": "Link"}
+  {
+   "hidden": 0,
+   "label": "Planning & Risk",
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "icon": "briefcase",
+   "label": "Project Contract",
+   "link_to": "Project Contract",
+   "link_type": "DocType",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "icon": "list",
+   "label": "PM WBS Task",
+   "link_to": "PM WBS Task",
+   "link_type": "DocType",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "icon": "flag",
+   "label": "PM Milestone",
+   "link_to": "PM Milestone",
+   "link_type": "DocType",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "icon": "shield",
+   "label": "Risk Register",
+   "link_to": "Risk Register",
+   "link_type": "DocType",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "label": "Execution",
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "icon": "alert-triangle",
+   "label": "PM Issue Log",
+   "link_to": "PM Issue Log",
+   "link_type": "DocType",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "icon": "gantt",
+   "label": "PM Schedule (Gantt)",
+   "link_to": "pm_schedule_gantt",
+   "link_type": "Page",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "label": "Baseline & KPIs",
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "icon": "clock",
+   "label": "PM Baseline Snapshot",
+   "link_to": "PM Baseline Snapshot",
+   "link_type": "DocType",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "icon": "activity",
+   "label": "PM KPI Snapshot",
+   "link_to": "PM KPI Snapshot",
+   "link_type": "DocType",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "label": "Resources",
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "icon": "users",
+   "label": "PM Resource Assignment",
+   "link_to": "PM Resource Assignment",
+   "link_type": "DocType",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "label": "Project Reports",
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "icon": "git-merge",
+   "is_query_report": 1,
+   "label": "PM CPM Groundwork",
+   "link_to": "PM CPM Groundwork",
+   "link_type": "Report",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "icon": "trending-up",
+   "label": "PM Resource Loading",
+   "link_to": "PM Resource Loading",
+   "link_type": "Report",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "label": "AEC Suite",
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "icon": "list",
+   "label": "BOQ Item",
+   "link_to": "BOQ Item",
+   "link_type": "DocType",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "icon": "map",
+   "label": "Engineering Stage",
+   "link_to": "Engineering Stage",
+   "link_type": "DocType",
+   "type": "Link"
+  }
  ],
  "module": "Omnexa Projects PM",
  "name": "projects",
