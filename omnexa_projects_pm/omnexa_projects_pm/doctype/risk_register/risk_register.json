@@ -4,29 +4,165 @@
  "autoname": "format:RSK-{YYYY}-{#####}",
  "doctype": "DocType",
  "engine": "InnoDB",
- "field_order": ["project", "schedule_section", "related_wbs_task", "risk_title", "category", "risk_owner", "probability", "impact", "risk_score", "mitigation_plan", "next_review_date", "status", "company", "branch"],
+ "field_order": [
+  "identity_section",
+  "project",
+  "schedule_section",
+  "related_wbs_task",
+  "risk_title",
+  "category",
+  "classification_code",
+  "risk_owner",
+  "probability",
+  "impact",
+  "risk_score",
+  "mitigation_plan",
+  "next_review_date",
+  "status",
+  "company",
+  "branch",
+  "control_section",
+  "owner_user"
+ ],
  "fields": [
-  {"fieldname": "project", "fieldtype": "Link", "label": "Project Contract", "options": "Project Contract", "reqd": 1, "in_list_view": 1},
-  {"fieldname": "schedule_section", "fieldtype": "Section Break", "label": "Schedule Integration"},
-  {"fieldname": "related_wbs_task", "fieldtype": "Link", "label": "Related WBS Task", "options": "PM WBS Task", "description": "Optional link to a WBS task (schedule / deliverable driver)."},
-  {"fieldname": "risk_title", "fieldtype": "Data", "label": "Risk Title", "reqd": 1, "in_list_view": 1},
-  {"fieldname": "category", "fieldtype": "Data", "label": "Category", "in_list_view": 1},
-  {"fieldname": "risk_owner", "fieldtype": "Link", "label": "Risk Owner", "options": "User", "description": "Accountable for monitoring and mitigation actions."},
-  {"fieldname": "probability", "fieldtype": "Percent", "label": "Probability %", "default": "0"},
-  {"fieldname": "impact", "fieldtype": "Percent", "label": "Impact %", "default": "0"},
-  {"fieldname": "risk_score", "fieldtype": "Float", "label": "Risk Score", "read_only": 1},
-  {"fieldname": "mitigation_plan", "fieldtype": "Small Text", "label": "Mitigation Plan"},
-  {"fieldname": "next_review_date", "fieldtype": "Date", "label": "Next Review Date", "description": "Planned review for treatment effectiveness (ISO 31000 / risk process)."},
-  {"fieldname": "status", "fieldtype": "Select", "label": "Status", "options": "Open\nMitigated\nClosed", "default": "Open", "reqd": 1, "in_list_view": 1},
-  {"fieldname": "company", "fieldtype": "Link", "label": "Company", "options": "Company", "reqd": 1, "in_list_view": 1},
-  {"fieldname": "branch", "fieldtype": "Link", "label": "Branch", "options": "Branch", "reqd": 1, "in_list_view": 1}
+  {
+   "fieldname": "identity_section",
+   "fieldtype": "Section Break",
+   "label": "Risk Identity"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project Contract",
+   "options": "Project Contract",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "schedule_section",
+   "fieldtype": "Section Break",
+   "label": "Schedule Integration"
+  },
+  {
+   "fieldname": "related_wbs_task",
+   "fieldtype": "Link",
+   "label": "Related WBS Task",
+   "options": "PM WBS Task",
+   "description": "Optional link to a WBS task (schedule / deliverable driver)."
+  },
+  {
+   "fieldname": "risk_title",
+   "fieldtype": "Data",
+   "label": "Risk Title",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "category",
+   "fieldtype": "Data",
+   "label": "Category",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "classification_code",
+   "fieldtype": "Data",
+   "label": "Classification Code"
+  },
+  {
+   "fieldname": "risk_owner",
+   "fieldtype": "Link",
+   "label": "Risk Owner",
+   "options": "User",
+   "description": "Accountable for monitoring and mitigation actions."
+  },
+  {
+   "fieldname": "probability",
+   "fieldtype": "Percent",
+   "label": "Probability %",
+   "default": "0"
+  },
+  {
+   "fieldname": "impact",
+   "fieldtype": "Percent",
+   "label": "Impact %",
+   "default": "0"
+  },
+  {
+   "fieldname": "risk_score",
+   "fieldtype": "Float",
+   "label": "Risk Score",
+   "read_only": 1
+  },
+  {
+   "fieldname": "mitigation_plan",
+   "fieldtype": "Small Text",
+   "label": "Mitigation Plan"
+  },
+  {
+   "fieldname": "next_review_date",
+   "fieldtype": "Date",
+   "label": "Next Review Date",
+   "description": "Planned review for treatment effectiveness (ISO 31000 / risk process)."
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Open\nMitigated\nClosed",
+   "default": "Open",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "label": "Branch",
+   "options": "Branch",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "control_section",
+   "fieldtype": "Section Break",
+   "label": "Control"
+  },
+  {
+   "fieldname": "owner_user",
+   "fieldtype": "Link",
+   "label": "Owner",
+   "options": "User"
+  }
  ],
  "module": "Omnexa Projects PM",
  "name": "Risk Register",
  "permissions": [
-  {"role": "System Manager", "read": 1, "write": 1, "create": 1, "delete": 1, "report": 1, "export": 1, "share": 1},
-  {"role": "Project Manager", "read": 1, "write": 1, "create": 1, "delete": 0, "report": 1, "export": 1}
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "report": 1,
+   "export": 1,
+   "share": 1
+  },
+  {
+   "role": "Project Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 0,
+   "report": 1,
+   "export": 1
+  }
  ],
  "track_changes": 1
 }
-

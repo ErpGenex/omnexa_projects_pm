@@ -4,42 +4,239 @@
  "autoname": "format:WBS-{YYYY}-{#####}",
  "doctype": "DocType",
  "engine": "InnoDB",
- "field_order": ["project", "task_name", "deliverable_summary", "parent_task", "sequence_no", "planned_start", "planned_end", "actual_start", "actual_end", "planned_cost", "actual_cost", "progress_percent", "dependencies", "status", "company", "branch"],
+ "field_order": [
+  "identity_section",
+  "project",
+  "task_name",
+  "deliverable_summary",
+  "parent_task",
+  "sequence_no",
+  "schedule_section",
+  "planned_start",
+  "planned_end",
+  "actual_start",
+  "actual_end",
+  "cost_section",
+  "planned_cost",
+  "actual_cost",
+  "progress_percent",
+  "dependencies_section",
+  "dependencies",
+  "status",
+  "reporting_tag",
+  "company",
+  "branch",
+  "control_section",
+  "owner_user"
+ ],
  "fields": [
-  {"fieldname": "project", "fieldtype": "Link", "label": "Project Contract", "options": "Project Contract", "reqd": 1, "in_list_view": 1},
-  {"fieldname": "task_name", "fieldtype": "Data", "label": "Task Name", "reqd": 1, "in_list_view": 1},
-  {"fieldname": "deliverable_summary", "fieldtype": "Small Text", "label": "Deliverable / Output", "description": "Maps this WBS node to a named deliverable or output (ISO 21500 / PMBOK)."},
-  {"fieldname": "parent_task", "fieldtype": "Link", "label": "Parent Task", "options": "PM WBS Task"},
-  {"fieldname": "sequence_no", "fieldtype": "Int", "label": "Sequence", "default": "0", "in_list_view": 1},
-  {"fieldname": "planned_start", "fieldtype": "Date", "label": "Planned Start"},
-  {"fieldname": "planned_end", "fieldtype": "Date", "label": "Planned End"},
-  {"fieldname": "actual_start", "fieldtype": "Date", "label": "Actual Start"},
-  {"fieldname": "actual_end", "fieldtype": "Date", "label": "Actual End"},
-  {"fieldname": "planned_cost", "fieldtype": "Currency", "label": "Planned Cost", "default": "0"},
-  {"fieldname": "actual_cost", "fieldtype": "Currency", "label": "Actual Cost", "default": "0"},
-  {"fieldname": "progress_percent", "fieldtype": "Percent", "label": "Progress %", "default": "0"},
-  {"fieldname": "dependencies", "fieldtype": "Table", "label": "Dependencies", "options": "PM Task Dependency"},
-  {"fieldname": "status", "fieldtype": "Select", "label": "Status", "options": "Planned\nIn Progress\nBlocked\nCompleted", "default": "Planned", "in_list_view": 1},
-  {"fieldname": "company", "fieldtype": "Link", "label": "Company", "options": "Company", "reqd": 1, "in_list_view": 1},
-  {"fieldname": "branch", "fieldtype": "Link", "label": "Branch", "options": "Branch", "reqd": 1, "in_list_view": 1}
+  {
+   "fieldname": "identity_section",
+   "fieldtype": "Section Break",
+   "label": "WBS Identity"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project Contract",
+   "options": "Project Contract",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "task_name",
+   "fieldtype": "Data",
+   "label": "Task Name",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "deliverable_summary",
+   "fieldtype": "Small Text",
+   "label": "Deliverable / Output",
+   "description": "Maps this WBS node to a named deliverable or output (ISO 21500 / PMBOK)."
+  },
+  {
+   "fieldname": "parent_task",
+   "fieldtype": "Link",
+   "label": "Parent Task",
+   "options": "PM WBS Task"
+  },
+  {
+   "fieldname": "sequence_no",
+   "fieldtype": "Int",
+   "label": "Sequence",
+   "default": "0",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "schedule_section",
+   "fieldtype": "Section Break",
+   "label": "Schedule"
+  },
+  {
+   "fieldname": "planned_start",
+   "fieldtype": "Date",
+   "label": "Planned Start"
+  },
+  {
+   "fieldname": "planned_end",
+   "fieldtype": "Date",
+   "label": "Planned End"
+  },
+  {
+   "fieldname": "actual_start",
+   "fieldtype": "Date",
+   "label": "Actual Start"
+  },
+  {
+   "fieldname": "actual_end",
+   "fieldtype": "Date",
+   "label": "Actual End"
+  },
+  {
+   "fieldname": "cost_section",
+   "fieldtype": "Section Break",
+   "label": "Cost and Progress"
+  },
+  {
+   "fieldname": "planned_cost",
+   "fieldtype": "Currency",
+   "label": "Planned Cost",
+   "default": "0"
+  },
+  {
+   "fieldname": "actual_cost",
+   "fieldtype": "Currency",
+   "label": "Actual Cost",
+   "default": "0"
+  },
+  {
+   "fieldname": "progress_percent",
+   "fieldtype": "Percent",
+   "label": "Progress %",
+   "default": "0"
+  },
+  {
+   "fieldname": "dependencies_section",
+   "fieldtype": "Section Break",
+   "label": "Dependencies and Status"
+  },
+  {
+   "fieldname": "dependencies",
+   "fieldtype": "Table",
+   "label": "Dependencies",
+   "options": "PM Task Dependency"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Planned\nIn Progress\nBlocked\nCompleted",
+   "default": "Planned",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "reporting_tag",
+   "fieldtype": "Data",
+   "label": "Reporting Tag"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "label": "Branch",
+   "options": "Branch",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "control_section",
+   "fieldtype": "Section Break",
+   "label": "Control"
+  },
+  {
+   "fieldname": "owner_user",
+   "fieldtype": "Link",
+   "label": "Owner",
+   "options": "User"
+  }
  ],
  "links": [
-  {"group": "Construction", "link_doctype": "BOQ Item", "link_fieldname": "pm_wbs_task"},
-  {"group": "Construction", "link_doctype": "Project Contract", "link_fieldname": "primary_wbs_task"},
-  {"group": "Construction", "link_doctype": "IPC Certificate", "link_fieldname": "pm_wbs_task"},
-  {"group": "Engineering", "link_doctype": "Engineering Stage", "link_fieldname": "linked_wbs_task"},
-  {"group": "Engineering", "link_doctype": "Engineering Submittal", "link_fieldname": "linked_wbs_task"},
-  {"group": "Planning", "link_doctype": "PM Milestone", "link_fieldname": "related_wbs_task"},
-  {"group": "Planning", "link_doctype": "Risk Register", "link_fieldname": "related_wbs_task"},
-  {"group": "Planning", "link_doctype": "PM Issue Log", "link_fieldname": "related_wbs_task"},
-  {"group": "Resources", "link_doctype": "PM Resource Assignment", "link_fieldname": "pm_wbs_task"}
+  {
+   "group": "Construction",
+   "link_doctype": "BOQ Item",
+   "link_fieldname": "pm_wbs_task"
+  },
+  {
+   "group": "Construction",
+   "link_doctype": "Project Contract",
+   "link_fieldname": "primary_wbs_task"
+  },
+  {
+   "group": "Construction",
+   "link_doctype": "IPC Certificate",
+   "link_fieldname": "pm_wbs_task"
+  },
+  {
+   "group": "Engineering",
+   "link_doctype": "Engineering Stage",
+   "link_fieldname": "linked_wbs_task"
+  },
+  {
+   "group": "Engineering",
+   "link_doctype": "Engineering Submittal",
+   "link_fieldname": "linked_wbs_task"
+  },
+  {
+   "group": "Planning",
+   "link_doctype": "PM Milestone",
+   "link_fieldname": "related_wbs_task"
+  },
+  {
+   "group": "Planning",
+   "link_doctype": "Risk Register",
+   "link_fieldname": "related_wbs_task"
+  },
+  {
+   "group": "Planning",
+   "link_doctype": "PM Issue Log",
+   "link_fieldname": "related_wbs_task"
+  },
+  {
+   "group": "Resources",
+   "link_doctype": "PM Resource Assignment",
+   "link_fieldname": "pm_wbs_task"
+  }
  ],
  "module": "Omnexa Projects PM",
  "name": "PM WBS Task",
  "permissions": [
-  {"role": "System Manager", "read": 1, "write": 1, "create": 1, "delete": 1, "report": 1, "export": 1},
-  {"role": "Project Manager", "read": 1, "write": 1, "create": 1, "delete": 0, "report": 1, "export": 1}
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "report": 1,
+   "export": 1
+  },
+  {
+   "role": "Project Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 0,
+   "report": 1,
+   "export": 1
+  }
  ],
  "track_changes": 1
 }
-
