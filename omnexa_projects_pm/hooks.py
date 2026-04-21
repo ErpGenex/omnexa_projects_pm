@@ -82,7 +82,8 @@ required_apps = ["omnexa_core"]
 # Installation
 # ------------
 
-# before_install = "omnexa_projects_pm.install.before_install"
+before_install = "omnexa_projects_pm.install.enforce_supported_frappe_version"
+before_migrate = "omnexa_projects_pm.install.enforce_supported_frappe_version"
 # after_install = "omnexa_projects_pm.install.after_install"
 
 # Uninstallation
