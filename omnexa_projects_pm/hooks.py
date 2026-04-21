@@ -82,9 +82,9 @@ required_apps = ["omnexa_core"]
 # Installation
 # ------------
 
-before_install = "omnexa_projects_pm.install.enforce_supported_frappe_version"
-before_migrate = "omnexa_projects_pm.install.enforce_supported_frappe_version"
-# after_install = "omnexa_projects_pm.install.after_install"
+before_install = "omnexa_projects_pm.omnexa_projects_pm.install.enforce_supported_frappe_version"
+before_migrate = "omnexa_projects_pm.omnexa_projects_pm.install.enforce_supported_frappe_version"
+# after_install = "omnexa_projects_pm.omnexa_projects_pm.install.after_install"
 
 # Uninstallation
 # ------------
@@ -170,7 +170,7 @@ before_migrate = "omnexa_projects_pm.install.enforce_supported_frappe_version"
 # Testing
 # -------
 
-# before_tests = "omnexa_projects_pm.install.before_tests"
+# before_tests = "omnexa_projects_pm.omnexa_projects_pm.install.before_tests"
 
 # Overriding Methods
 # ------------------------------
