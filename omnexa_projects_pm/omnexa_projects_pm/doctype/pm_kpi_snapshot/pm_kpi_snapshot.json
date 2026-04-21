@@ -1,145 +1,143 @@
 {
- "actions": [],
- "allow_rename": 1,
- "autoname": "format:KPI-{YYYY}-{#####}",
- "doctype": "DocType",
- "engine": "InnoDB",
- "field_order": [
-  "identity_section",
-  "project",
-  "snapshot_date",
-  "kpi_section",
-  "pv",
-  "ev",
-  "ac",
-  "spi",
-  "cpi",
-  "forecast_section",
-  "estimate_at_completion",
-  "company",
-  "branch",
-  "control_section",
-  "snapshot_reference"
- ],
- "fields": [
-  {
-   "fieldname": "identity_section",
-   "fieldtype": "Section Break",
-   "label": "Snapshot Identity"
-  },
-  {
-   "fieldname": "project",
-   "fieldtype": "Link",
-   "label": "Project Contract",
-   "options": "Project Contract",
-   "reqd": 1,
-   "in_list_view": 1
-  },
-  {
-   "fieldname": "snapshot_date",
-   "fieldtype": "Date",
-   "label": "Snapshot Date",
-   "reqd": 1,
-   "in_list_view": 1
-  },
-  {
-   "fieldname": "kpi_section",
-   "fieldtype": "Section Break",
-   "label": "Earned Value Metrics"
-  },
-  {
-   "fieldname": "pv",
-   "fieldtype": "Currency",
-   "label": "Planned Value (PV)",
-   "default": "0",
-   "description": "Time-phased planned value from WBS planned dates and planned cost (daily snapshot job rolls up from tasks)."
-  },
-  {
-   "fieldname": "ev",
-   "fieldtype": "Currency",
-   "label": "Earned Value (EV)",
-   "default": "0",
-   "description": "Sum of (planned cost * progress percent) on WBS tasks."
-  },
-  {
-   "fieldname": "ac",
-   "fieldtype": "Currency",
-   "label": "Actual Cost (AC)",
-   "default": "0",
-   "description": "Sum of actual cost on WBS tasks (enter project actuals on tasks; GL integration is a future phase)."
-  },
-  {
-   "fieldname": "spi",
-   "fieldtype": "Float",
-   "label": "SPI",
-   "read_only": 1
-  },
-  {
-   "fieldname": "cpi",
-   "fieldtype": "Float",
-   "label": "CPI",
-   "read_only": 1
-  },
-  {
-   "fieldname": "forecast_section",
-   "fieldtype": "Section Break",
-   "label": "Forecast"
-  },
-  {
-   "fieldname": "estimate_at_completion",
-   "fieldtype": "Currency",
-   "label": "Estimate At Completion",
-   "default": "0"
-  },
-  {
-   "fieldname": "company",
-   "fieldtype": "Link",
-   "label": "Company",
-   "options": "Company",
-   "reqd": 1,
-   "in_list_view": 1
-  },
-  {
-   "fieldname": "branch",
-   "fieldtype": "Link",
-   "label": "Branch",
-   "options": "Branch",
-   "reqd": 1,
-   "in_list_view": 1
-  },
-  {
-   "fieldname": "control_section",
-   "fieldtype": "Section Break",
-   "label": "Control"
-  },
-  {
-   "fieldname": "snapshot_reference",
-   "fieldtype": "Data",
-   "label": "Snapshot Reference"
-  }
- ],
- "module": "Omnexa Projects PM",
- "name": "PM KPI Snapshot",
- "permissions": [
-  {
-   "role": "System Manager",
-   "read": 1,
-   "write": 1,
-   "create": 1,
-   "delete": 1,
-   "report": 1,
-   "export": 1,
-   "share": 1
-  },
-  {
-   "role": "Project Manager",
-   "read": 1,
-   "write": 1,
-   "create": 1,
-   "delete": 0,
-   "report": 1,
-   "export": 1
-  }
- ],
- "track_changes": 1
+	"actions": [],
+	"allow_rename": 1,
+	"autoname": "format:KPI-{YYYY}-{#####}",
+	"doctype": "DocType",
+	"engine": "InnoDB",
+	"field_order": [
+		"project",
+		"snapshot_date",
+		"kpi_section",
+		"pv",
+		"ev",
+		"column_break_omnexa_1",
+		"ac",
+		"spi",
+		"cpi",
+		"forecast_section",
+		"estimate_at_completion",
+		"company",
+		"column_break_omnexa_2",
+		"branch",
+		"snapshot_reference"
+	],
+	"fields": [
+		{
+			"fieldname": "project",
+			"fieldtype": "Link",
+			"label": "Project Contract",
+			"options": "Project Contract",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "snapshot_date",
+			"fieldtype": "Date",
+			"label": "Snapshot Date",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "kpi_section",
+			"fieldtype": "Section Break",
+			"label": "Earned Value Metrics"
+		},
+		{
+			"fieldname": "pv",
+			"fieldtype": "Currency",
+			"label": "Planned Value (PV)",
+			"default": "0",
+			"description": "Time-phased planned value from WBS planned dates and planned cost (daily snapshot job rolls up from tasks)."
+		},
+		{
+			"fieldname": "ev",
+			"fieldtype": "Currency",
+			"label": "Earned Value (EV)",
+			"default": "0",
+			"description": "Sum of (planned cost * progress percent) on WBS tasks."
+		},
+		{
+			"fieldname": "ac",
+			"fieldtype": "Currency",
+			"label": "Actual Cost (AC)",
+			"default": "0",
+			"description": "Sum of actual cost on WBS tasks (enter project actuals on tasks; GL integration is a future phase)."
+		},
+		{
+			"fieldname": "spi",
+			"fieldtype": "Float",
+			"label": "SPI",
+			"read_only": 1
+		},
+		{
+			"fieldname": "cpi",
+			"fieldtype": "Float",
+			"label": "CPI",
+			"read_only": 1
+		},
+		{
+			"fieldname": "forecast_section",
+			"fieldtype": "Section Break",
+			"label": "Forecast"
+		},
+		{
+			"fieldname": "estimate_at_completion",
+			"fieldtype": "Currency",
+			"label": "Estimate At Completion",
+			"default": "0"
+		},
+		{
+			"fieldname": "company",
+			"fieldtype": "Link",
+			"label": "Company",
+			"options": "Company",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "branch",
+			"fieldtype": "Link",
+			"label": "Branch",
+			"options": "Branch",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "snapshot_reference",
+			"fieldtype": "Data",
+			"label": "Snapshot Reference"
+		},
+		{
+			"fieldname": "column_break_omnexa_1",
+			"fieldtype": "Column Break"
+		},
+		{
+			"fieldname": "column_break_omnexa_2",
+			"fieldtype": "Column Break"
+		}
+	],
+	"module": "Omnexa Projects PM",
+	"name": "PM KPI Snapshot",
+	"permissions": [
+		{
+			"role": "System Manager",
+			"read": 1,
+			"write": 1,
+			"create": 1,
+			"delete": 1,
+			"report": 1,
+			"export": 1,
+			"share": 1
+		},
+		{
+			"role": "Project Manager",
+			"read": 1,
+			"write": 1,
+			"create": 1,
+			"delete": 0,
+			"report": 1,
+			"export": 1
+		}
+	],
+	"track_changes": 1
 }

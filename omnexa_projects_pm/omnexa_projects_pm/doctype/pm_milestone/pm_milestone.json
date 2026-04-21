@@ -1,31 +1,123 @@
 {
- "actions": [],
- "allow_rename": 1,
- "autoname": "format:MS-{YYYY}-{#####}",
- "doctype": "DocType",
- "engine": "InnoDB",
- "field_order": ["identity_section", "project", "milestone_name", "schedule_section", "related_wbs_task", "planned_date", "actual_date", "control_section", "weight_percent", "status", "acceptance_criteria", "company", "branch"],
- "fields": [
-  {"fieldname": "identity_section", "fieldtype": "Section Break", "label": "Milestone Identity"},
-  {"fieldname": "project", "fieldtype": "Link", "label": "Project Contract", "options": "Project Contract", "reqd": 1, "in_list_view": 1},
-  {"fieldname": "milestone_name", "fieldtype": "Data", "label": "Milestone Name", "reqd": 1, "in_list_view": 1},
-  {"fieldname": "schedule_section", "fieldtype": "Section Break", "label": "Schedule Integration"},
-  {"fieldname": "related_wbs_task", "fieldtype": "Link", "label": "Related WBS Task", "options": "PM WBS Task", "description": "Optional link to the WBS node this milestone tracks."},
-  {"fieldname": "planned_date", "fieldtype": "Date", "label": "Planned Date", "in_list_view": 1},
-  {"fieldname": "actual_date", "fieldtype": "Date", "label": "Actual Date"},
-  {"fieldname": "control_section", "fieldtype": "Section Break", "label": "Control"},
-  {"fieldname": "weight_percent", "fieldtype": "Percent", "label": "Weight %", "default": "0"},
-  {"fieldname": "status", "fieldtype": "Select", "label": "Status", "options": "Planned\nIn Progress\nCompleted\nDelayed", "default": "Planned", "in_list_view": 1},
-  {"fieldname": "acceptance_criteria", "fieldtype": "Small Text", "label": "Acceptance Criteria"},
-  {"fieldname": "company", "fieldtype": "Link", "label": "Company", "options": "Company", "reqd": 1, "in_list_view": 1},
-  {"fieldname": "branch", "fieldtype": "Link", "label": "Branch", "options": "Branch", "reqd": 1, "in_list_view": 1}
- ],
- "module": "Omnexa Projects PM",
- "name": "PM Milestone",
- "permissions": [
-  {"role": "System Manager", "read": 1, "write": 1, "create": 1, "delete": 1, "report": 1, "export": 1},
-  {"role": "Project Manager", "read": 1, "write": 1, "create": 1, "delete": 0, "report": 1, "export": 1}
- ],
- "track_changes": 1
+	"actions": [],
+	"allow_rename": 1,
+	"autoname": "format:MS-{YYYY}-{#####}",
+	"doctype": "DocType",
+	"engine": "InnoDB",
+	"field_order": [
+		"project",
+		"milestone_name",
+		"schedule_section",
+		"related_wbs_task",
+		"planned_date",
+		"actual_date",
+		"weight_percent",
+		"column_break_omnexa_1",
+		"status",
+		"acceptance_criteria",
+		"company",
+		"branch"
+	],
+	"fields": [
+		{
+			"fieldname": "project",
+			"fieldtype": "Link",
+			"label": "Project Contract",
+			"options": "Project Contract",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "milestone_name",
+			"fieldtype": "Data",
+			"label": "Milestone Name",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "schedule_section",
+			"fieldtype": "Section Break",
+			"label": "Schedule Integration"
+		},
+		{
+			"fieldname": "related_wbs_task",
+			"fieldtype": "Link",
+			"label": "Related WBS Task",
+			"options": "PM WBS Task",
+			"description": "Optional link to the WBS node this milestone tracks."
+		},
+		{
+			"fieldname": "planned_date",
+			"fieldtype": "Date",
+			"label": "Planned Date",
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "actual_date",
+			"fieldtype": "Date",
+			"label": "Actual Date"
+		},
+		{
+			"fieldname": "weight_percent",
+			"fieldtype": "Percent",
+			"label": "Weight %",
+			"default": "0"
+		},
+		{
+			"fieldname": "status",
+			"fieldtype": "Select",
+			"label": "Status",
+			"options": "Planned\nIn Progress\nCompleted\nDelayed",
+			"default": "Planned",
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "acceptance_criteria",
+			"fieldtype": "Small Text",
+			"label": "Acceptance Criteria"
+		},
+		{
+			"fieldname": "company",
+			"fieldtype": "Link",
+			"label": "Company",
+			"options": "Company",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "branch",
+			"fieldtype": "Link",
+			"label": "Branch",
+			"options": "Branch",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "column_break_omnexa_1",
+			"fieldtype": "Column Break"
+		}
+	],
+	"module": "Omnexa Projects PM",
+	"name": "PM Milestone",
+	"permissions": [
+		{
+			"role": "System Manager",
+			"read": 1,
+			"write": 1,
+			"create": 1,
+			"delete": 1,
+			"report": 1,
+			"export": 1
+		},
+		{
+			"role": "Project Manager",
+			"read": 1,
+			"write": 1,
+			"create": 1,
+			"delete": 0,
+			"report": 1,
+			"export": 1
+		}
+	],
+	"track_changes": 1
 }
-
