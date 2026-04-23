@@ -1,8 +1,8 @@
 app_name = "omnexa_projects_pm"
 app_title = "ErpGenEx — Projects PM"
-app_publisher = "Omnexa"
+app_publisher = "ErpGenEx"
 app_description = "Project management vertical"
-app_email = "dev@omnexa.com"
+app_email = "dev@erpgenex.com"
 app_license = "mit"
 
 # Apps
