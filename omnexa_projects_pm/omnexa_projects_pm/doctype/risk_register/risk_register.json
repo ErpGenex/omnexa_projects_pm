@@ -5,7 +5,9 @@
 	"doctype": "DocType",
 	"engine": "InnoDB",
 	"field_order": [
+		"tab_break_overview",
 		"project",
+		"tab_break_1",
 		"schedule_section",
 		"related_wbs_task",
 		"risk_title",
@@ -25,6 +27,16 @@
 		"owner_user"
 	],
 	"fields": [
+		{
+			"fieldname": "tab_break_overview",
+			"fieldtype": "Tab Break",
+			"label": "Overview"
+		},
+		{
+			"fieldname": "tab_break_1",
+			"fieldtype": "Tab Break",
+			"label": "Details"
+		},
 		{
 			"fieldname": "project",
 			"fieldtype": "Link",

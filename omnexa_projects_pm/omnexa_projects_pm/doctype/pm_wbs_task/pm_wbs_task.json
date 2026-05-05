@@ -5,22 +5,26 @@
 	"doctype": "DocType",
 	"engine": "InnoDB",
 	"field_order": [
+		"tab_break_overview",
 		"project",
 		"task_name",
 		"column_break_omnexa_1",
 		"deliverable_summary",
 		"parent_task",
 		"sequence_no",
+		"tab_break_1",
 		"schedule_section",
 		"planned_start",
 		"planned_end",
 		"column_break_omnexa_3",
 		"actual_start",
 		"actual_end",
+		"tab_break_2",
 		"cost_section",
 		"planned_cost",
 		"actual_cost",
 		"progress_percent",
+		"tab_break_3",
 		"dependencies_section",
 		"dependencies",
 		"status",
@@ -31,6 +35,26 @@
 		"owner_user"
 	],
 	"fields": [
+		{
+			"fieldname": "tab_break_overview",
+			"fieldtype": "Tab Break",
+			"label": "Overview"
+		},
+		{
+			"fieldname": "tab_break_1",
+			"fieldtype": "Tab Break",
+			"label": "Details"
+		},
+		{
+			"fieldname": "tab_break_2",
+			"fieldtype": "Tab Break",
+			"label": "Further"
+		},
+		{
+			"fieldname": "tab_break_3",
+			"fieldtype": "Tab Break",
+			"label": "Posting"
+		},
 		{
 			"fieldname": "project",
 			"fieldtype": "Link",
