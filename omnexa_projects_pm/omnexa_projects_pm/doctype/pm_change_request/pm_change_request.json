@@ -1,0 +1,164 @@
+{
+	"actions": [],
+	"allow_rename": 1,
+	"autoname": "format:PCR-{YYYY}-{#####}",
+	"doctype": "DocType",
+	"engine": "InnoDB",
+	"field_order": [
+		"project",
+		"change_title",
+		"change_type",
+		"column_break_1",
+		"requested_by",
+		"request_date",
+		"related_wbs_task",
+		"impact_section",
+		"scope_impact",
+		"schedule_impact_days",
+		"column_break_impact",
+		"cost_impact",
+		"risk_impact",
+		"status",
+		"approval_section",
+		"approved_by",
+		"approval_date",
+		"column_break_2",
+		"company",
+		"branch",
+		"description"
+	],
+	"fields": [
+		{
+			"fieldname": "project",
+			"fieldtype": "Link",
+			"label": "Project Contract",
+			"options": "Project Contract",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "change_title",
+			"fieldtype": "Data",
+			"label": "Change Title",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "change_type",
+			"fieldtype": "Select",
+			"label": "Change Type",
+			"options": "Scope\nSchedule\nCost\nQuality\nResource\nOther",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "requested_by",
+			"fieldtype": "Link",
+			"label": "Requested By",
+			"options": "User"
+		},
+		{
+			"fieldname": "request_date",
+			"fieldtype": "Date",
+			"label": "Request Date",
+			"default": "Today"
+		},
+		{
+			"fieldname": "related_wbs_task",
+			"fieldtype": "Link",
+			"label": "Related WBS Task",
+			"options": "PM WBS Task"
+		},
+		{
+			"fieldname": "impact_section",
+			"fieldtype": "Section Break",
+			"label": "Impact Analysis (PMBOK Change)"
+		},
+		{
+			"fieldname": "scope_impact",
+			"fieldtype": "Small Text",
+			"label": "Scope Impact"
+		},
+		{
+			"fieldname": "schedule_impact_days",
+			"fieldtype": "Int",
+			"label": "Schedule Impact (Days)",
+			"default": "0"
+		},
+		{
+			"fieldname": "cost_impact",
+			"fieldtype": "Currency",
+			"label": "Cost Impact",
+			"default": "0"
+		},
+		{
+			"fieldname": "risk_impact",
+			"fieldtype": "Small Text",
+			"label": "Risk Impact"
+		},
+		{
+			"fieldname": "status",
+			"fieldtype": "Select",
+			"label": "Status",
+			"options": "Draft\nUnder Review\nApproved\nRejected\nImplemented",
+			"default": "Draft",
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "approval_section",
+			"fieldtype": "Section Break",
+			"label": "Approval"
+		},
+		{
+			"fieldname": "approved_by",
+			"fieldtype": "Link",
+			"label": "Approved By",
+			"options": "User",
+			"read_only": 1
+		},
+		{
+			"fieldname": "approval_date",
+			"fieldtype": "Date",
+			"label": "Approval Date",
+			"read_only": 1
+		},
+		{
+			"fieldname": "description",
+			"fieldtype": "Text Editor",
+			"label": "Description"
+		},
+		{
+			"fieldname": "company",
+			"fieldtype": "Link",
+			"label": "Company",
+			"options": "Company",
+			"reqd": 1
+		},
+		{
+			"fieldname": "branch",
+			"fieldtype": "Link",
+			"label": "Branch",
+			"options": "Branch",
+			"reqd": 1
+		},
+		{
+			"fieldname": "column_break_1",
+			"fieldtype": "Column Break"
+		},
+		{
+			"fieldname": "column_break_impact",
+			"fieldtype": "Column Break"
+		},
+		{
+			"fieldname": "column_break_2",
+			"fieldtype": "Column Break"
+		}
+	],
+	"module": "Omnexa Projects PM",
+	"name": "PM Change Request",
+	"permissions": [
+		{"role": "System Manager", "read": 1, "write": 1, "create": 1, "delete": 1},
+		{"role": "Project Manager", "read": 1, "write": 1, "create": 1, "delete": 0}
+	],
+	"track_changes": 1
+}

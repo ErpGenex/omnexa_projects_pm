@@ -1,0 +1,13 @@
+{
+ "doctype": "Page",
+ "name": "pm-portfolio-dashboard",
+ "module": "Omnexa Projects PM",
+ "title": "PM Portfolio Dashboard",
+ "icon": "layout",
+ "standard": "Yes",
+ "roles": [
+  {"role": "System Manager"},
+  {"role": "Project Manager"},
+  {"role": "Desk User"}
+ ]
+}

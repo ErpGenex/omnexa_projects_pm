@@ -1,0 +1,16 @@
+{
+	"doctype": "Page",
+	"module": "Omnexa Projects PM",
+	"name": "projects-pm-finance-desk",
+	"page_name": "projects-pm-finance-desk",
+	"standard": "Yes",
+	"title": "Finance Desk",
+	"roles": [
+		{
+			"role": "System Manager"
+		},
+		{
+			"role": "Company Admin"
+		}
+	]
+}

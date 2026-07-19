@@ -1,0 +1,263 @@
+Acceptance Criteria,Acceptance Criteria
+Acceptance Criteria is mandatory when milestone is Completed.,Acceptance Criteria is mandatory when milestone is مكتمل.
+Accountable for monitoring and mitigation actions.,Accountable لـ monitoring و mitigation إجراءات.
+Actions,إجراءات
+Active ITPs,نشط ITPs
+Actual / Planned %,Actual Planned%
+Actual Cost,Actual تكلفة
+Actual Cost (AC),Actual تكلفة (AC)
+Actual Date,Actual تاريخ
+Actual Date is mandatory when milestone is Completed.,Actual تاريخ is mandatory when milestone is مكتمل.
+Actual Duration (Days),Actual Duration (Days)
+Actual End,Actual نهاية
+Actual h,Actual h
+Actual Hours,Actual Hours
+Actual Start,Actual بداية
+Actual Units,Actual Units
+AEC Suite,AEC Suite
+Approval,موافقة
+Approval Date,موافقة تاريخ
+Approved By,معتمد حسب
+At Risk,At مخاطر
+Avg CPI,متوسط CPI
+Avg risk score,متوسط مخاطر درجة
+Avg SPI,متوسط SPI
+Avg weight %,متوسط weight%
+BAC,BAC
+Bars use CPM calendar API (critical path in red). Float (days): hover a bar.,Bars use CPM تقويم API (critical path in red). Float (days): hover a bar.
+Baseline & KPIs,Baseline & KPIs
+Baseline Date,Baseline تاريخ
+Baseline task name for Construction Schedule sync.,Baseline مهمة اسم لـ Construction Schedule sync.
+BOQ Item,BOQ صنف
+Branch,الفرع
+Budget at Completion (BAC),Budget at Completion (BAC)
+Calendar days added in the CPM forward pass after the predecessor bound (e.g. FS + 2: successor starts 2 days after predecessor finish).,تقويم days added in the CPM forward pass after the predecessor bound (e. g. FS + 2: successor starts 2 days after predecessor finish).
+Category,الفئة
+Change Title,Change عنوان
+Change Type,Change نوع
+Classification and Ownership,Classification و Ownership
+Classification Code,Classification كود
+Company,الشركة
+Company is required,شركة is required
+Company is required.,شركة is required.
+Company or Project Contract is required,شركة or مشروع عقد is required
+Construction Schedule Baseline is not installed,Construction Schedule Baseline is not installed
+Cost,تكلفة
+Cost and Progress,تكلفة و Progress
+Cost Code,تكلفة كود
+Cost Health,تكلفة صحة
+Cost Impact,تكلفة Impact
+Cost Performance,تكلفة أداء
+Cost Rate,تكلفة معدل
+Cost Variance,تكلفة Variance
+Cost Variance (CV),تكلفة Variance (CV)
+CPI,CPI
+CPM Flag,CPM Flag
+Critical NCRs,Critical NCRs
+Delayed,Delayed
+Deliverable / Output,Deliverable Output
+Dependencies,Dependencies
+Dependencies and Status,Dependencies و حالة
+Dependency Note,Dependency Note
+Dependency Reference,Dependency Reference
+Dependency Type,Dependency نوع
+Depends On Task,Depends On مهمة
+Description,الوصف
+Description is mandatory before closing an issue.,وصف is mandatory before closing an issue.
+Details,التفاصيل
+Due Date,تاريخ الاستحقاق
+Due Date is mandatory while issue is not closed.,استحقاق تاريخ is mandatory while issue is not مغلق.
+Duration (Days),Duration (Days)
+"e.g. hours, days, ton, shift.","e. g. hours, days, ton, shift."
+Earned Value (EV),Earned Value (EV)
+Earned Value Metrics,Earned Value Metrics
+EF,EF
+Email,البريد الإلكتروني
+Engagement Strategy,Engagement Strategy
+Engineering Stage,هندسة Stage
+"Equipment ID, material description, or external person name.","Equipment معرف, material وصف, or external person اسم."
+ES,ES
+Estimate At Completion (EAC),Estimate At Completion (EAC)
+Estimate to Complete (ETC),Estimate إلى Complete (ETC)
+EVM fields updated from WBS tasks.,EVM fields updated from WBS tasks.
+Execution,Execution
+Failed Inspections,فشل Inspections
+Filters,Filters
+Float,Float
+"For delayed milestones, provide Actual Date or Acceptance Criteria note for traceability.","لـ delayed milestones, provide Actual تاريخ or Acceptance Criteria note لـ traceability."
+"For Human resources, set User or Resource Name.","لـ Human resources, set مستخدم or Resource اسم."
+Forecast,Forecast
+From,From
+From Date,From تاريخ
+Further,Further
+Gantt Marker,Gantt Marker
+Hours cannot be negative.,Hours cannot be negative.
+Impact %,Impact%
+Impact Analysis (PMBOK Change),Impact Analysis (PMBOK Change)
+Impact Area,Impact Area
+Influence,Influence
+Interest,Interest
+Internal person when resource is Human.,Internal person when resource is Human.
+ISO 21500 stakeholder engagement plan entry.,ISO 21500 stakeholder engagement خطة قيد.
+Issue Title,Issue عنوان
+Issues,Issues
+Lag (Days),Lag (Days)
+Leave empty to show all projects with schedule data.,Leave empty إلى show all مشاريع with schedule بيانات.
+LF,LF
+Links WBS to BOQ/GL cost allocation.,Links WBS إلى BOQ GL تكلفة allocation.
+Load omnexa_core vertical portal desk,Load omnexa أساسي vertical بوابة desk
+Load omnexa_core vertical workcenter kit,Load omnexa أساسي vertical workcenter kit
+Load schedule,Load schedule
+LS,LS
+Maps this WBS node to a named deliverable or output (ISO 21500 / PMBOK).,Maps this WBS node إلى a named deliverable or output (ISO 21500 PMBOK).
+Milestone Name,Milestone اسم
+Milestones,Milestones
+Mitigation Plan,Mitigation خطة
+Mitigation Plan is mandatory before closing a risk.,Mitigation خطة is mandatory before closing a مخاطر.
+Mitigation Plan is mandatory for open/mitigated risks.,Mitigation خطة is mandatory لـ مفتوح mitigated risks.
+Next Review Date,Next Review تاريخ
+Next Review Date is mandatory for open/mitigated risks.,Next Review تاريخ is mandatory لـ مفتوح mitigated risks.
+"No timeline rows. Select a project and click Sync WBS from BOQ, or add PM WBS tasks with planned dates.","No timeline rows. Select a مشروع و click Sync WBS from BOQ, or إضافة PM WBS tasks with planned dates."
+Normalized effort for loading views (optional if using units only).,Normalized effort لـ loading views (optional if using units only).
+Notes,Notes
+Omnexa Projects PM,Omnexa مشاريع PM
+On Track,On Track
+Open Changes,مفتوح Changes
+Open Inspections,مفتوح Inspections
+Open NCRs,مفتوح NCRs
+Optional link to a WBS task (schedule / deliverable driver).,Optional link إلى a WBS مهمة (schedule deliverable driver).
+Optional link to the WBS node this milestone tracks.,Optional link إلى the WBS node this milestone tracks.
+Optional task this allocation supports.,Optional مهمة this allocation supports.
+Optional WBS task affected by this issue.,Optional WBS مهمة affected حسب this issue.
+Organization,Organization
+Overview,نظرة عامة
+Owner,Owner
+Owner is mandatory before closing an issue.,Owner is mandatory before closing an issue.
+Owner is mandatory while issue is not closed.,Owner is mandatory while issue is not مغلق.
+Parent Task,Parent مهمة
+Phone,Phone
+Planned Budget,Planned Budget
+Planned Cost,Planned تكلفة
+Planned Date,Planned تاريخ
+Planned Duration (Days),Planned Duration (Days)
+Planned End,Planned نهاية
+Planned h,Planned h
+Planned Hours,Planned Hours
+Planned review for treatment effectiveness (ISO 31000 / risk process).,Planned review لـ treatment effectiveness (ISO 31000 مخاطر process).
+Planned Start,Planned بداية
+Planned Units,Planned Units
+Planned Value (PV),Planned Value (PV)
+Planning & Risk,Planning & مخاطر
+Planning Units,Planning Units
+PM Baseline Snapshot,PM Baseline لقطة
+PM Change Request,PM Change طلب
+PM Compliance (ISO 21500 / PMBOK),PM امتثال (ISO 21500 PMBOK)
+PM CPM Groundwork,PM CPM Groundwork
+PM Issue Log,PM Issue سجل
+PM KPI Snapshot,PM KPI لقطة
+PM Milestone,PM Milestone
+PM Portfolio Dashboard,PM Portfolio لوحة معلومات
+PM Program,PM Program
+PM Program Project,PM Program مشروع
+PM Resource Assignment,PM Resource Assignment
+PM Resource Loading,PM Resource Loading
+PM Schedule (Gantt),PM Schedule (Gantt)
+PM Stakeholder Register,PM Stakeholder Register
+PM Task Dependency,PM مهمة Dependency
+PM WBS Task,PM WBS مهمة
+Portfolio Priority,Portfolio Priority
+Portfolio SPI,Portfolio SPI
+Portfolio Weight,Portfolio Weight
+Posting,Posting
+Priority Rank,Priority Rank
+Probability %,Probability%
+Program Manager,Program مدير
+Program Projects,Program مشاريع
+Program Title,Program عنوان
+Progress %,Progress%
+Project,مشروع
+Project Contract,مشروع عقد
+Project Contract is required,مشروع عقد is required
+Project Contract is required.,مشروع عقد is required.
+Project is required,مشروع is required
+Project Reports,تقارير المشاريع
+Project {0} appears more than once in this program.,مشروع { 0 } appears more than once in this program.
+Projects,مشاريع
+projects,مشاريع
+Projects PM Workcenter,مشاريع PM Workcenter
+projects-pm-analytics-dashboard,مشاريع - pm - تحليلات - لوحة معلومات
+projects-pm-customer-portal,مشاريع - pm - عميل - بوابة
+projects-pm-executive-dashboard,مشاريع - pm - تنفيذي - لوحة معلومات
+projects-pm-finance-desk,مشاريع - pm - مالية - desk
+projects-pm-operations-desk,مشاريع - pm - عمليات - desk
+Quality Score,جودة درجة
+Recalculate PV / EV / AC from WBS,Recalculate PV EV AC from WBS
+Refresh,Refresh
+Related WBS Task,Related WBS مهمة
+Reporting Tag,Reporting Tag
+Request Date,طلب تاريخ
+Requested By,Requested حسب
+Resource,Resource
+Resource Name,Resource اسم
+Resource Type,Resource نوع
+Resources,Resources
+Risk Impact,مخاطر Impact
+Risk Owner,مخاطر Owner
+Risk Owner is mandatory for open/mitigated risks.,مخاطر Owner is mandatory لـ مفتوح mitigated risks.
+Risk Register,مخاطر Register
+Risk Score,مخاطر درجة
+Risk Title,مخاطر عنوان
+Risks,Risks
+Role,الدور
+Schedule,Schedule
+Schedule Baseline Ref,Schedule Baseline Ref
+Schedule Health,Schedule صحة
+Schedule Impact (Days),Schedule Impact (Days)
+Schedule Integration,Schedule تكامل
+Schedule link,Schedule link
+Schedule Performance,Schedule أداء
+Schedule Variance (Days),Schedule Variance (Days)
+Schedule Variance (SV),Schedule Variance (SV)
+Schedule Window,Schedule Window
+Scope Impact,Scope Impact
+Select a Project Contract first.,Select a مشروع عقد first.
+Sequence,Sequence
+"Set Resource Name for equipment, material, or other types.","Set Resource اسم لـ equipment, material, or other types."
+Set {0} before linking a PM WBS Task.,Set { 0 } before linking a PM WBS مهمة.
+Severity,Severity
+Snapshot Date,لقطة تاريخ
+Snapshot Reference,لقطة Reference
+Snapshots,Snapshots
+SPI,SPI
+Stakeholder Name,Stakeholder اسم
+Status,الحالة
+Strategic Objective,Strategic Objective
+Strategic Score,Strategic درجة
+Sum of actual cost on WBS tasks (enter project actuals on tasks; GL integration is a future phase).,Sum of actual تكلفة on WBS tasks (enter مشروع actuals on tasks; GL تكامل is a future phase).
+Sum of WBS planned cost (PMBOK BAC).,Sum of WBS planned تكلفة (PMBOK BAC).
+Sync WBS from BOQ,Sync WBS from BOQ
+Task,مهمة
+Task Name,مهمة اسم
+Tasks have offsets but no calendar dates. Set baseline or planned_start on WBS tasks.,Tasks have offsets but no تقويم dates. Set baseline or planned بداية on WBS tasks.
+TCPI (BAC),TCPI (BAC)
+Time-phased planned value from WBS planned dates and planned cost (daily snapshot job rolls up from tasks).,Time - phased planned value from WBS planned dates و planned تكلفة (يومي لقطة job rolls up from tasks).
+Title,العنوان
+To,إلى
+To Date,إلى تاريخ
+To Date cannot be before From Date.,إلى تاريخ cannot be before From تاريخ.
+Total Float,إجمالي Float
+Type,النوع
+Unassigned,Unassigned
+Unit of Measure,Unit of Measure
+Units cannot be negative.,Units cannot be negative.
+User,المستخدم
+Variance at Completion (VAC),Variance at Completion (VAC)
+Variances & Health,Variances & صحة
+WBS Sync,WBS Sync
+WBS Task,WBS مهمة
+Weight %,Weight%
+XER content is required,XER content is required
+{0} belongs to a different Project Contract.,{ 0 } belongs إلى a different مشروع عقد.
+Σ AC,AC
+Σ EV,EV
+Σ PV,PV

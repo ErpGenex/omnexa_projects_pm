@@ -1,0 +1,13 @@
+{
+ "docstatus": 0,
+ "doctype": "Page",
+ "icon": "gantt",
+ "idx": 0,
+ "module": "Omnexa Projects PM",
+ "name": "pm_schedule_gantt",
+ "page_name": "pm_schedule_gantt",
+ "roles": [],
+ "standard": "Yes",
+ "system_page": 0,
+ "title": "PM Schedule (Gantt)"
+}

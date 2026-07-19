@@ -1,0 +1,20 @@
+{
+ "add_total_row": 1,
+ "columns": [],
+ "doctype": "Report",
+ "filters": [
+  {"fieldname": "company", "fieldtype": "Link", "label": "Company", "options": "Company", "reqd": 1, "width": "180px"},
+  {"fieldname": "branch", "fieldtype": "Link", "label": "Branch", "options": "Branch", "width": "180px"},
+  {"fieldname": "project", "fieldtype": "Link", "label": "Project Contract", "options": "Project Contract", "width": "220px"}
+ ],
+ "is_standard": "Yes",
+ "module": "Omnexa Projects PM",
+ "name": "PM Milestone Summary",
+ "ref_doctype": "PM Milestone",
+ "report_name": "PM Milestone Summary",
+ "report_type": "Script Report",
+ "roles": [
+  {"role": "System Manager"},
+  {"role": "Project Manager"}
+ ]
+}

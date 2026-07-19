@@ -1,0 +1,16 @@
+{
+	"doctype": "Page",
+	"module": "Omnexa Projects PM",
+	"name": "projects-pm-workcenter",
+	"page_name": "projects-pm-workcenter",
+	"standard": "Yes",
+	"title": "Projects PM Workcenter",
+	"roles": [
+		{
+			"role": "System Manager"
+		},
+		{
+			"role": "Company Admin"
+		}
+	]
+}

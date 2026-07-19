@@ -1,0 +1,233 @@
+{
+	"actions": [],
+	"allow_rename": 1,
+	"autoname": "format:KPI-{YYYY}-{#####}",
+	"doctype": "DocType",
+	"engine": "InnoDB",
+	"field_order": [
+		"tab_break_overview",
+		"project",
+		"snapshot_date",
+		"tab_break_1",
+		"kpi_section",
+		"bac",
+		"pv",
+		"ev",
+		"column_break_omnexa_1",
+		"ac",
+		"spi",
+		"cpi",
+		"variance_section",
+		"schedule_variance",
+		"cost_variance",
+		"column_break_variance",
+		"schedule_health_status",
+		"cost_health_status",
+		"tab_break_2",
+		"forecast_section",
+		"estimate_at_completion",
+		"estimate_to_complete",
+		"variance_at_completion",
+		"to_complete_performance_index",
+		"company",
+		"column_break_omnexa_2",
+		"branch",
+		"snapshot_reference"
+	],
+	"fields": [
+		{
+			"fieldname": "tab_break_overview",
+			"fieldtype": "Tab Break",
+			"label": "Overview"
+		},
+		{
+			"fieldname": "tab_break_1",
+			"fieldtype": "Tab Break",
+			"label": "Details"
+		},
+		{
+			"fieldname": "tab_break_2",
+			"fieldtype": "Tab Break",
+			"label": "Further"
+		},
+		{
+			"fieldname": "project",
+			"fieldtype": "Link",
+			"label": "Project Contract",
+			"options": "Project Contract",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "snapshot_date",
+			"fieldtype": "Date",
+			"label": "Snapshot Date",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "kpi_section",
+			"fieldtype": "Section Break",
+			"label": "Earned Value Metrics"
+		},
+		{
+			"fieldname": "bac",
+			"fieldtype": "Currency",
+			"label": "Budget at Completion (BAC)",
+			"read_only": 1,
+			"description": "Sum of WBS planned cost (PMBOK BAC)."
+		},
+		{
+			"fieldname": "pv",
+			"fieldtype": "Currency",
+			"label": "Planned Value (PV)",
+			"default": "0",
+			"description": "Time-phased planned value from WBS planned dates and planned cost (daily snapshot job rolls up from tasks)."
+		},
+		{
+			"fieldname": "ev",
+			"fieldtype": "Currency",
+			"label": "Earned Value (EV)",
+			"default": "0",
+			"description": "Sum of (planned cost * progress percent) on WBS tasks."
+		},
+		{
+			"fieldname": "ac",
+			"fieldtype": "Currency",
+			"label": "Actual Cost (AC)",
+			"default": "0",
+			"description": "Sum of actual cost on WBS tasks (enter project actuals on tasks; GL integration is a future phase)."
+		},
+		{
+			"fieldname": "spi",
+			"fieldtype": "Float",
+			"label": "SPI",
+			"read_only": 1
+		},
+		{
+			"fieldname": "cpi",
+			"fieldtype": "Float",
+			"label": "CPI",
+			"read_only": 1
+		},
+		{
+			"fieldname": "variance_section",
+			"fieldtype": "Section Break",
+			"label": "Variances & Health"
+		},
+		{
+			"fieldname": "schedule_variance",
+			"fieldtype": "Currency",
+			"label": "Schedule Variance (SV)",
+			"read_only": 1
+		},
+		{
+			"fieldname": "cost_variance",
+			"fieldtype": "Currency",
+			"label": "Cost Variance (CV)",
+			"read_only": 1
+		},
+		{
+			"fieldname": "column_break_variance",
+			"fieldtype": "Column Break"
+		},
+		{
+			"fieldname": "schedule_health_status",
+			"fieldtype": "Select",
+			"label": "Schedule Health",
+			"options": "On Track\nAt Risk\nDelayed",
+			"read_only": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "cost_health_status",
+			"fieldtype": "Select",
+			"label": "Cost Health",
+			"options": "On Budget\nAt Risk\nOver Budget",
+			"read_only": 1
+		},
+		{
+			"fieldname": "forecast_section",
+			"fieldtype": "Section Break",
+			"label": "Forecast"
+		},
+		{
+			"fieldname": "estimate_at_completion",
+			"fieldtype": "Currency",
+			"label": "Estimate At Completion (EAC)",
+			"read_only": 1,
+			"default": "0"
+		},
+		{
+			"fieldname": "estimate_to_complete",
+			"fieldtype": "Currency",
+			"label": "Estimate to Complete (ETC)",
+			"read_only": 1
+		},
+		{
+			"fieldname": "variance_at_completion",
+			"fieldtype": "Currency",
+			"label": "Variance at Completion (VAC)",
+			"read_only": 1
+		},
+		{
+			"fieldname": "to_complete_performance_index",
+			"fieldtype": "Float",
+			"label": "TCPI (BAC)",
+			"read_only": 1
+		},
+		{
+			"fieldname": "company",
+			"fieldtype": "Link",
+			"label": "Company",
+			"options": "Company",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "branch",
+			"fieldtype": "Link",
+			"label": "Branch",
+			"options": "Branch",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "snapshot_reference",
+			"fieldtype": "Data",
+			"label": "Snapshot Reference"
+		},
+		{
+			"fieldname": "column_break_omnexa_1",
+			"fieldtype": "Column Break"
+		},
+		{
+			"fieldname": "column_break_omnexa_2",
+			"fieldtype": "Column Break"
+		}
+	],
+	"module": "Omnexa Projects PM",
+	"name": "PM KPI Snapshot",
+	"permissions": [
+		{
+			"role": "System Manager",
+			"read": 1,
+			"write": 1,
+			"create": 1,
+			"delete": 1,
+			"report": 1,
+			"export": 1,
+			"share": 1
+		},
+		{
+			"role": "Project Manager",
+			"read": 1,
+			"write": 1,
+			"create": 1,
+			"delete": 0,
+			"report": 1,
+			"export": 1
+		}
+	],
+	"track_changes": 1
+}

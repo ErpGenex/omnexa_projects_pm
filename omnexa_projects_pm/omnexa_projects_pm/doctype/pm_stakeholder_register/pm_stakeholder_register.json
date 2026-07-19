@@ -1,0 +1,121 @@
+{
+	"actions": [],
+	"allow_rename": 1,
+	"autoname": "format:STK-{YYYY}-{#####}",
+	"doctype": "DocType",
+	"engine": "InnoDB",
+	"field_order": [
+		"project",
+		"stakeholder_name",
+		"organization",
+		"column_break_1",
+		"role",
+		"influence",
+		"interest",
+		"engagement_strategy",
+		"contact_email",
+		"contact_phone",
+		"column_break_2",
+		"status",
+		"company",
+		"branch"
+	],
+	"fields": [
+		{
+			"fieldname": "project",
+			"fieldtype": "Link",
+			"label": "Project Contract",
+			"options": "Project Contract",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "stakeholder_name",
+			"fieldtype": "Data",
+			"label": "Stakeholder Name",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "organization",
+			"fieldtype": "Data",
+			"label": "Organization",
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "role",
+			"fieldtype": "Select",
+			"label": "Role",
+			"options": "Client\nSponsor\nPM\nContractor\nConsultant\nRegulator\nCommunity\nOther",
+			"reqd": 1
+		},
+		{
+			"fieldname": "influence",
+			"fieldtype": "Select",
+			"label": "Influence",
+			"options": "Low\nMedium\nHigh",
+			"default": "Medium"
+		},
+		{
+			"fieldname": "interest",
+			"fieldtype": "Select",
+			"label": "Interest",
+			"options": "Low\nMedium\nHigh",
+			"default": "Medium"
+		},
+		{
+			"fieldname": "engagement_strategy",
+			"fieldtype": "Small Text",
+			"label": "Engagement Strategy",
+			"description": "ISO 21500 stakeholder engagement plan entry."
+		},
+		{
+			"fieldname": "contact_email",
+			"fieldtype": "Data",
+			"label": "Email",
+			"options": "Email"
+		},
+		{
+			"fieldname": "contact_phone",
+			"fieldtype": "Data",
+			"label": "Phone"
+		},
+		{
+			"fieldname": "status",
+			"fieldtype": "Select",
+			"label": "Status",
+			"options": "Active\nInactive",
+			"default": "Active",
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "company",
+			"fieldtype": "Link",
+			"label": "Company",
+			"options": "Company",
+			"reqd": 1
+		},
+		{
+			"fieldname": "branch",
+			"fieldtype": "Link",
+			"label": "Branch",
+			"options": "Branch",
+			"reqd": 1
+		},
+		{
+			"fieldname": "column_break_1",
+			"fieldtype": "Column Break"
+		},
+		{
+			"fieldname": "column_break_2",
+			"fieldtype": "Column Break"
+		}
+	],
+	"module": "Omnexa Projects PM",
+	"name": "PM Stakeholder Register",
+	"permissions": [
+		{"role": "System Manager", "read": 1, "write": 1, "create": 1, "delete": 1},
+		{"role": "Project Manager", "read": 1, "write": 1, "create": 1, "delete": 0}
+	],
+	"track_changes": 1
+}
