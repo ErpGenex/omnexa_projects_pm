@@ -20,7 +20,7 @@ def get_project_quality_summary(project_contract: str | None = None, company: st
 		"active_itps": 0,
 		"quality_score": 100.0,
 		"projects": [],
-		"source": "omnexa_projects_pm",
+		"source": "omnexa_projects_pm"
 	}
 
 	if project_contract:
@@ -57,7 +57,7 @@ def _project_quality(project_contract: str) -> dict:
 		"open_inspections": 0,
 		"failed_inspections": 0,
 		"active_itps": 0,
-		"quality_score": 100.0,
+		"quality_score": 100.0
 	}
 	if frappe.db.exists("DocType", "Construction NCR"):
 		out["open_ncrs"] = frappe.db.count(
@@ -73,17 +73,18 @@ def _project_quality(project_contract: str) -> dict:
 			"Construction Inspection Request",
 			{
 				"project_contract": project_contract,
-				"status": ["in", ["Draft", "Scheduled", "In Progress"]],
-			},
+				"status": ["in", ["Draft", "Scheduled", "In Progress"]]},
 		)
 		out["failed_inspections"] = frappe.db.count(
 			"Construction Inspection Request",
-			{"project_contract": project_contract, "status": "Failed"},
+			{"project_contract": project_contract, "status": "Failed"
+	},
 		)
 	if frappe.db.exists("DocType", "Construction Inspection Test Plan"):
 		out["active_itps"] = frappe.db.count(
 			"Construction Inspection Test Plan",
-			{"project_contract": project_contract, "status": "Active"},
+			{"project_contract": project_contract, "status": "Active"
+	},
 		)
 	penalty = out["critical_ncrs"] * 8 + out["open_ncrs"] * 3 + out["failed_inspections"] * 5
 	out["quality_score"] = round(max(0.0, 100.0 - penalty), 1)
@@ -105,6 +106,6 @@ def get_portfolio_quality_kpis(company: str, branch: str | None = None) -> dict:
 		"failed_inspections": sum(r["failed_inspections"] for r in rows),
 		"active_itps": sum(r["active_itps"] for r in rows),
 		"avg_quality_score": round(sum(r["quality_score"] for r in rows) / len(rows), 1) if rows else 100.0,
-		"projects": rows,
+		"projects": rows
 	}
 	return agg

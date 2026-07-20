@@ -26,14 +26,24 @@ def execute(filters=None):
 	)
 
 	return [
-		{"label": _("Project Contract"), "fieldname": "project", "fieldtype": "Link", "options": "Project Contract", "width": 140},
-		{"label": _("WBS Task"), "fieldname": "pm_wbs_task", "fieldtype": "Link", "options": "PM WBS Task", "width": 130},
-		{"label": _("Type"), "fieldname": "resource_type", "fieldtype": "Data", "width": 90},
-		{"label": _("User"), "fieldname": "user", "fieldtype": "Link", "options": "User", "width": 120},
-		{"label": _("Resource"), "fieldname": "resource_label", "fieldtype": "Data", "width": 160},
-		{"label": _("From"), "fieldname": "from_date", "fieldtype": "Date", "width": 100},
-		{"label": _("To"), "fieldname": "to_date", "fieldtype": "Date", "width": 100},
-		{"label": _("Planned h"), "fieldname": "planned_hours", "fieldtype": "Float", "width": 90},
-		{"label": _("Actual h"), "fieldname": "actual_hours", "fieldtype": "Float", "width": 90},
-		{"label": _("Actual / Planned %"), "fieldname": "utilization_pct", "fieldtype": "Percent", "width": 110},
+		{"label": _("Project Contract"), "fieldname": "project", "fieldtype": "Link", "options": "Project Contract", "width": 140
+	},
+		{"label": _("WBS Task"), "fieldname": "pm_wbs_task", "fieldtype": "Link", "options": "PM WBS Task", "width": 130
+	},
+		{"label": _("Type"), "fieldname": "resource_type", "fieldtype": "Data", "width": 90
+	},
+		{"label": _("User"), "fieldname": "user", "fieldtype": "Link", "options": "User", "width": 120
+	},
+		{"label": _("Resource"), "fieldname": "resource_label", "fieldtype": "Data", "width": 160
+	},
+		{"label": _("From"), "fieldname": "from_date", "fieldtype": "Date", "width": 100
+	},
+		{"label": _("To"), "fieldname": "to_date", "fieldtype": "Date", "width": 100
+	},
+		{"label": _("Planned h"), "fieldname": "planned_hours", "fieldtype": "Float", "width": 90
+	},
+		{"label": _("Actual h"), "fieldname": "actual_hours", "fieldtype": "Float", "width": 90
+	},
+		{"label": _("Actual / Planned %"), "fieldname": "utilization_pct", "fieldtype": "Percent", "width": 110
+	},
 	], data

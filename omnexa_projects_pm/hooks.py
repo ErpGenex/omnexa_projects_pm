@@ -152,8 +152,7 @@ after_migrate = "omnexa_projects_pm.omnexa_projects_pm.install.after_migrate"
 scheduler_events = {
 	"daily": [
 		"omnexa_projects_pm.tasks.capture_daily_kpi_snapshot",
-	],
-}
+	]}
 
 # Testing
 # -------
@@ -198,22 +197,22 @@ scheduler_events = {
 
 # user_data_fields = [
 # 	{
-# 		"doctype": "{doctype_1}",
-# 		"filter_by": "{filter_by}",
-# 		"redact_fields": ["{field_1}", "{field_2}"],
+# 		"doctype": "{}",
+# 		"filter_by": "{}",
+# 		"redact_fields": ["{}", "{}"],
 # 		"partial": 1,
 # 	},
 # 	{
-# 		"doctype": "{doctype_2}",
-# 		"filter_by": "{filter_by}",
+# 		"doctype": "{}",
+# 		"filter_by": "{}",
 # 		"partial": 1,
 # 	},
 # 	{
-# 		"doctype": "{doctype_3}",
+# 		"doctype": "{}",
 # 		"strict": False,
 # 	},
 # 	{
-# 		"doctype": "{doctype_4}"
+# 		"doctype": "{}"
 # 	}
 # ]
 

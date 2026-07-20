@@ -51,8 +51,8 @@ def get_program_portfolio(company: str, branch: str | None = None) -> dict:
 					"weight": flt(line.weight),
 					"spi": evm.get("spi"),
 					"cpi": evm.get("cpi"),
-					"schedule_health": evm.get("schedule_health_status"),
-				}
+					"schedule_health": evm.get("schedule_health_status")
+	}
 			)
 		out_programs.append(
 			{
@@ -62,14 +62,14 @@ def get_program_portfolio(company: str, branch: str | None = None) -> dict:
 				"status": prog.status,
 				"program_manager": prog.program_manager,
 				"project_count": len(projects),
-				"projects": projects,
-			}
+				"projects": projects
+	}
 		)
 
 	return {
 		"programs": out_programs,
 		"unassigned_projects": _unassigned_projects(company, branch, exclude=assigned),
-		"program_count": len(out_programs),
+		"program_count": len(out_programs)
 	}
 
 
@@ -100,8 +100,8 @@ def prioritize_portfolio(company: str, branch: str | None = None) -> list[dict]:
 					"program": prog["name"],
 					"program_title": prog["program_title"],
 					"program_priority": prog.get("portfolio_priority"),
-					"composite_rank": flt(prog.get("portfolio_priority")) * 1000 + flt(p.get("priority_rank")),
-				}
+					"composite_rank": flt(prog.get("portfolio_priority")) * 1000 + flt(p.get("priority_rank"))
+	}
 			)
 	for row in data.get("unassigned_projects", []):
 		flat.append(
@@ -109,8 +109,8 @@ def prioritize_portfolio(company: str, branch: str | None = None) -> list[dict]:
 				"project_contract": row["name"],
 				"program": None,
 				"program_title": _("Unassigned"),
-				"composite_rank": 999999,
-			}
+				"composite_rank": 999999
+	}
 		)
 	flat.sort(key=lambda r: r.get("composite_rank", 999999))
 	return flat

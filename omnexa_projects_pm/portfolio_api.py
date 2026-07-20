@@ -93,8 +93,8 @@ def _pm_portfolio_dashboard(company: str, branch: str | None = None) -> dict:
 				"spi": evm.get("spi"),
 				"cpi": evm.get("cpi"),
 				"schedule_health": health,
-				"cost_health": evm.get("cost_health_status"),
-			}
+				"cost_health": evm.get("cost_health_status")
+	}
 		)
 
 	programs = get_program_portfolio(company, branch)
@@ -116,5 +116,5 @@ def _pm_portfolio_dashboard(company: str, branch: str | None = None) -> dict:
 		"program_count": programs.get("program_count", 0),
 		"unassigned_projects": programs.get("unassigned_projects", []),
 		"quality_kpis": quality,
-		"source": "omnexa_projects_pm",
+		"source": "omnexa_projects_pm"
 	}

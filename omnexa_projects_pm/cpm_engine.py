@@ -115,7 +115,7 @@ def _compute_cpm_for_project(project_tasks, project_deps, project_name: str) -> 
 				"lf": lf_map[name],
 				"total_float": total_float,
 				"gantt_marker": "◆" if critical else "",
-				"cpm_flag": "Critical" if critical else "Non-Critical",
-			}
+				"cpm_flag": "Critical" if critical else "Non-Critical"
+	}
 		)
 	return rows

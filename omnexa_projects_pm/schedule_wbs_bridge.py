@@ -13,7 +13,8 @@ from frappe.utils import flt, getdate
 def _active_baseline(project_contract: str) -> dict | None:
 	active = frappe.db.get_value(
 		"Construction Schedule Baseline",
-		{"project_contract": project_contract, "is_active": 1, "docstatus": 1},
+		{"project_contract": project_contract, "is_active": 1, "docstatus": 1
+	},
 		["name", "planned_start", "planned_completion"],
 		as_dict=True,
 	)
@@ -21,7 +22,8 @@ def _active_baseline(project_contract: str) -> dict | None:
 		return active
 	rows = frappe.get_all(
 		"Construction Schedule Baseline",
-		filters={"project_contract": project_contract, "docstatus": 1},
+		filters={"project_contract": project_contract, "docstatus": 1
+	},
 		fields=["name", "planned_start", "planned_completion"],
 		order_by="modified desc",
 		limit_page_length=1,
@@ -64,7 +66,8 @@ def sync_baseline_to_pm_wbs(project_contract: str, *, chain_dependencies: int = 
 
 	baseline = _active_baseline(project_contract)
 	if not baseline:
-		return {"created": 0, "updated": 0, "dependencies": 0, "message": "No submitted baseline"}
+		return {"created": 0, "updated": 0, "dependencies": 0, "message": "No submitted baseline"
+	}
 
 	contract = frappe.db.get_value(
 		"Project Contract",
@@ -88,7 +91,8 @@ def sync_baseline_to_pm_wbs(project_contract: str, *, chain_dependencies: int = 
 
 	rows = frappe.get_all(
 		"Construction Schedule Baseline Task",
-		filters={"parent": baseline.name},
+		filters={"parent": baseline.name
+	},
 		fields=fields,
 		order_by="idx asc",
 		limit_page_length=5000,
@@ -113,8 +117,8 @@ def sync_baseline_to_pm_wbs(project_contract: str, *, chain_dependencies: int = 
 			"boq_item": row.boq_item,
 			"schedule_baseline_ref": task_name,
 			"planned_cost": planned_cost,
-			"sequence_no": (i + 1) * 10,
-		}
+			"sequence_no": (i + 1) * 10
+	}
 		if existing:
 			frappe.db.set_value("PM WBS Task", existing, payload, update_modified=True)
 			wbs_name = existing
@@ -127,8 +131,7 @@ def sync_baseline_to_pm_wbs(project_contract: str, *, chain_dependencies: int = 
 					"company": contract.company,
 					"branch": contract.branch,
 					"status": "Planned",
-					**payload,
-				}
+					**payload}
 			)
 			doc.insert(ignore_permissions=True)
 			wbs_name = doc.name
@@ -154,7 +157,7 @@ def sync_baseline_to_pm_wbs(project_contract: str, *, chain_dependencies: int = 
 		"baseline": baseline.name,
 		"created": created,
 		"updated": updated,
-		"dependencies": deps,
+		"dependencies": deps
 	}
 
 
@@ -165,7 +168,8 @@ def sync_pm_wbs_to_baseline(project_contract: str) -> dict:
 		frappe.throw(_("Construction Schedule Baseline is not installed"))
 	baseline = _active_baseline(project_contract)
 	if not baseline:
-		return {"updated": 0, "message": "No submitted baseline"}
+		return {"updated": 0, "message": "No submitted baseline"
+	}
 
 	tasks = frappe.get_all(
 		"PM WBS Task",
@@ -176,7 +180,8 @@ def sync_pm_wbs_to_baseline(project_contract: str) -> dict:
 	by_ref = {t.schedule_baseline_ref or t.task_name: t for t in tasks}
 	rows = frappe.get_all(
 		"Construction Schedule Baseline Task",
-		filters={"parent": baseline.name},
+		filters={"parent": baseline.name
+	},
 		fields=["name", "task_name", "boq_item", "cost_code"],
 		limit_page_length=5000,
 	)
@@ -195,23 +200,26 @@ def sync_pm_wbs_to_baseline(project_contract: str) -> dict:
 			{
 				"start_date": match.planned_start,
 				"end_date": match.planned_end,
-				"progress_percent": flt(match.progress_percent),
-			},
+				"progress_percent": flt(match.progress_percent)
+	},
 			update_modified=True,
 		)
 		updated += 1
 
-	return {"baseline": baseline.name, "updated": updated}
+	return {"baseline": baseline.name, "updated": updated
+	}
 
 
 def _ensure_fs_dependency(child: str, parent: str) -> None:
 	existing = frappe.db.exists(
 		"PM Task Dependency",
-		{"parent": child, "depends_on_task": parent, "dependency_type": "FS"},
+		{"parent": child, "depends_on_task": parent, "dependency_type": "FS"
+	},
 	)
 	if existing:
 		return
 	task = frappe.get_doc("PM WBS Task", child)
-	task.append("dependencies", {"depends_on_task": parent, "dependency_type": "FS", "lag_days": 0})
+	task.append("dependencies", {"depends_on_task": parent, "dependency_type": "FS", "lag_days": 0
+	})
 	task.flags.ignore_permissions = True
 	task.save()

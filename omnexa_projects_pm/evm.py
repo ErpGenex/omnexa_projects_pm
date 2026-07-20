@@ -112,7 +112,7 @@ def compute_evm_indices(
 		"variance_at_completion": round(vac, 2),
 		"to_complete_performance_index": round(tcpi_bac, 4),
 		"schedule_health_status": _schedule_health(spi),
-		"cost_health_status": _cost_health(cpi),
+		"cost_health_status": _cost_health(cpi)
 	}
 
 

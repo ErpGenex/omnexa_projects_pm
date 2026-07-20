@@ -20,8 +20,10 @@ class TestWbsIntegration(FrappeTestCase):
 	def test_weighted_boq_completion_percent_equal_weights_when_no_cost(self):
 		pct = weighted_boq_completion_percent(
 			[
-				{"completion_percent": 40, "planned_cost": 0},
-				{"completion_percent": 60, "planned_cost": 0},
+				{"completion_percent": 40, "planned_cost": 0
+	},
+				{"completion_percent": 60, "planned_cost": 0
+	},
 			]
 		)
 		self.assertEqual(pct, 50.0)
@@ -29,14 +31,17 @@ class TestWbsIntegration(FrappeTestCase):
 	def test_weighted_boq_completion_percent_cost_weighted(self):
 		pct = weighted_boq_completion_percent(
 			[
-				{"completion_percent": 0, "planned_cost": 900},
-				{"completion_percent": 100, "planned_cost": 100},
+				{"completion_percent": 0, "planned_cost": 900
+	},
+				{"completion_percent": 100, "planned_cost": 100
+	},
 			]
 		)
 		self.assertEqual(pct, 10.0)
 
 	def test_weighted_boq_completion_percent_clamped(self):
 		pct = weighted_boq_completion_percent(
-			[{"completion_percent": 150, "planned_cost": 1}],
+			[{"completion_percent": 150, "planned_cost": 1
+	}],
 		)
 		self.assertEqual(pct, 100.0)

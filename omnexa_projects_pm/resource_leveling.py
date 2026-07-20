@@ -53,8 +53,7 @@ def detect_resource_overloads(
 					"date": day,
 					"hours": round(hours, 2),
 					"capacity": hours_per_day,
-					"overload_hours": round(hours - hours_per_day, 2),
-				}
+					"overload_hours": round(hours - hours_per_day, 2)}
 			)
 	return overloads
 
@@ -72,7 +71,8 @@ def apply_resource_leveling(
 
 	overloads = detect_resource_overloads(project_contract, hours_per_day=hours_per_day)
 	if not overloads:
-		return {"shifted_tasks": 0, "remaining_overloads": 0, "message": "No overload detected"}
+		return {"shifted_tasks": 0, "remaining_overloads": 0, "message": "No overload detected"
+	}
 
 	cpm = {row["id"]: row for row in cpm_timeline_calendar(project_contract).get("items", [])}
 	assignments = frappe.get_all(
@@ -136,5 +136,5 @@ def apply_resource_leveling(
 	return {
 		"shifted_tasks": shifted,
 		"remaining_overloads": remaining,
-		"hours_per_day": hours_per_day,
+		"hours_per_day": hours_per_day
 	}

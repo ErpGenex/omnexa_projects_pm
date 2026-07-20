@@ -43,7 +43,8 @@ def sync_wbs_from_boq(project_contract: str, *, chain_dependencies: int = 1) -> 
 			frappe.db.set_value(
 				"PM WBS Task",
 				task_name,
-				{"cost_code": row.cost_code, "boq_item": row.name},
+				{"cost_code": row.cost_code, "boq_item": row.name
+	},
 				update_modified=False,
 			)
 			updated += 1
@@ -67,8 +68,8 @@ def sync_wbs_from_boq(project_contract: str, *, chain_dependencies: int = 1) -> 
 					"sequence_no": (i + 1) * 10,
 					"status": "Planned",
 					"company": contract.company,
-					"branch": contract.branch,
-				}
+					"branch": contract.branch
+	}
 			)
 			task.insert(ignore_permissions=True)
 			task_name = task.name
@@ -88,7 +89,7 @@ def sync_wbs_from_boq(project_contract: str, *, chain_dependencies: int = 1) -> 
 		"created": created,
 		"updated": updated,
 		"linked": linked,
-		"tasks": len(task_names),
+		"tasks": len(task_names)
 	}
 
 
@@ -98,14 +99,16 @@ def _chain_fs_dependencies(task_names: list[str]) -> None:
 		pred = task_names[i - 1]
 		existing = frappe.db.exists(
 			"PM Task Dependency",
-			{"parent": parent, "depends_on_task": pred, "dependency_type": "FS"},
+			{"parent": parent, "depends_on_task": pred, "dependency_type": "FS"
+	},
 		)
 		if existing:
 			continue
 		task = frappe.get_doc("PM WBS Task", parent)
 		task.append(
 			"dependencies",
-			{"dependency_type": "FS", "depends_on_task": pred, "lag_days": 0},
+			{"dependency_type": "FS", "depends_on_task": pred, "lag_days": 0
+	},
 		)
 		task.flags.ignore_permissions = True
 		task.save()

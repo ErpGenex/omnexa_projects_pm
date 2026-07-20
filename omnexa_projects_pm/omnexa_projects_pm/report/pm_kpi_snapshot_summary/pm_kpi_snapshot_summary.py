@@ -61,12 +61,20 @@ def execute(filters=None):
 
 def _columns():
 	return [
-		{"label": _("Project Contract"), "fieldname": "project", "fieldtype": "Link", "options": "Project Contract", "width": 170},
-		{"label": _("Branch"), "fieldname": "branch", "fieldtype": "Link", "options": "Branch", "width": 130},
-		{"label": _("Snapshots"), "fieldname": "snapshot_count", "fieldtype": "Int", "width": 90},
-		{"label": _("Avg SPI"), "fieldname": "avg_spi", "fieldtype": "Float", "width": 90},
-		{"label": _("Avg CPI"), "fieldname": "avg_cpi", "fieldtype": "Float", "width": 90},
-		{"label": _("Σ PV"), "fieldname": "sum_pv", "fieldtype": "Currency", "width": 110},
-		{"label": _("Σ EV"), "fieldname": "sum_ev", "fieldtype": "Currency", "width": 110},
-		{"label": _("Σ AC"), "fieldname": "sum_ac", "fieldtype": "Currency", "width": 110},
+		{"label": _("Project Contract"), "fieldname": "project", "fieldtype": "Link", "options": "Project Contract", "width": 170
+	},
+		{"label": _("Branch"), "fieldname": "branch", "fieldtype": "Link", "options": "Branch", "width": 130
+	},
+		{"label": _("Snapshots"), "fieldname": "snapshot_count", "fieldtype": "Int", "width": 90
+	},
+		{"label": _("Avg SPI"), "fieldname": "avg_spi", "fieldtype": "Float", "width": 90
+	},
+		{"label": _("Avg CPI"), "fieldname": "avg_cpi", "fieldtype": "Float", "width": 90
+	},
+		{"label": _("Σ PV"), "fieldname": "sum_pv", "fieldtype": "Currency", "width": 110
+	},
+		{"label": _("Σ EV"), "fieldname": "sum_ev", "fieldtype": "Currency", "width": 110
+	},
+		{"label": _("Σ AC"), "fieldname": "sum_ac", "fieldtype": "Currency", "width": 110
+	},
 	]

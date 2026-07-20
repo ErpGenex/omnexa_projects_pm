@@ -28,14 +28,22 @@ def execute(filters=None):
 		limit_page_length=500,
 	)
 	columns = [
-		{"label": _("Project Contract"), "fieldname": "project_contract", "fieldtype": "Link", "options": "Project Contract", "width": 140},
-		{"label": _("Title"), "fieldname": "contract_title", "fieldtype": "Data", "width": 180},
-		{"label": _("Open NCRs"), "fieldname": "open_ncrs", "fieldtype": "Int", "width": 90},
-		{"label": _("Critical NCRs"), "fieldname": "critical_ncrs", "fieldtype": "Int", "width": 100},
-		{"label": _("Open Inspections"), "fieldname": "open_inspections", "fieldtype": "Int", "width": 120},
-		{"label": _("Failed Inspections"), "fieldname": "failed_inspections", "fieldtype": "Int", "width": 120},
-		{"label": _("Active ITPs"), "fieldname": "active_itps", "fieldtype": "Int", "width": 90},
-		{"label": _("Quality Score"), "fieldname": "quality_score", "fieldtype": "Float", "width": 100},
+		{"label": _("Project Contract"), "fieldname": "project_contract", "fieldtype": "Link", "options": "Project Contract", "width": 140
+	},
+		{"label": _("Title"), "fieldname": "contract_title", "fieldtype": "Data", "width": 180
+	},
+		{"label": _("Open NCRs"), "fieldname": "open_ncrs", "fieldtype": "Int", "width": 90
+	},
+		{"label": _("Critical NCRs"), "fieldname": "critical_ncrs", "fieldtype": "Int", "width": 100
+	},
+		{"label": _("Open Inspections"), "fieldname": "open_inspections", "fieldtype": "Int", "width": 120
+	},
+		{"label": _("Failed Inspections"), "fieldname": "failed_inspections", "fieldtype": "Int", "width": 120
+	},
+		{"label": _("Active ITPs"), "fieldname": "active_itps", "fieldtype": "Int", "width": 90
+	},
+		{"label": _("Quality Score"), "fieldname": "quality_score", "fieldtype": "Float", "width": 100
+	},
 	]
 	data = []
 	for row in contracts:
@@ -44,8 +52,7 @@ def execute(filters=None):
 			{
 				"project_contract": row.name,
 				"contract_title": row.contract_title,
-				**q,
-			}
+				**q}
 		)
 	chart = auto_chart_for_columns(data, columns)
 	return columns, data, None, chart

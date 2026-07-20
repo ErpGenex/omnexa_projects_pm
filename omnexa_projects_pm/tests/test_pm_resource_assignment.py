@@ -14,8 +14,8 @@ class TestPmResourceAssignment(FrappeTestCase):
 				"project": "TEST-PROJECT",
 				"resource_type": "Human",
 				"company": "_Test Company",
-				"branch": "_Test Branch",
-			}
+				"branch": "_Test Branch"
+	}
 		)
 		with self.assertRaises(frappe.ValidationError):
 			doc.validate()
@@ -27,8 +27,8 @@ class TestPmResourceAssignment(FrappeTestCase):
 				"project": "TEST-PROJECT",
 				"resource_type": "Equipment",
 				"company": "_Test Company",
-				"branch": "_Test Branch",
-			}
+				"branch": "_Test Branch"
+	}
 		)
 		with self.assertRaises(frappe.ValidationError):
 			doc.validate()
@@ -42,8 +42,8 @@ class TestPmResourceAssignment(FrappeTestCase):
 				"resource_label": "Cement",
 				"planned_units": -1,
 				"company": "_Test Company",
-				"branch": "_Test Branch",
-			}
+				"branch": "_Test Branch"
+	}
 		)
 		with self.assertRaises(frappe.ValidationError):
 			doc.validate()
@@ -58,8 +58,8 @@ class TestPmResourceAssignment(FrappeTestCase):
 				"resource_type": "Other",
 				"resource_label": "Vendor",
 				"company": "_Test Company",
-				"branch": "_Test Branch",
-			}
+				"branch": "_Test Branch"
+	}
 		)
 		with self.assertRaises(frappe.ValidationError):
 			doc.validate()
@@ -72,7 +72,7 @@ class TestPmResourceAssignment(FrappeTestCase):
 				"resource_type": "Other",
 				"resource_label": "Vendor",
 				"company": "_Test Company",
-				"branch": "_Test Branch",
-			}
+				"branch": "_Test Branch"
+	}
 		)
 		doc.validate()

@@ -16,7 +16,8 @@ def capture_daily_kpi_snapshot():
 	)
 	today = nowdate()
 	for p in projects:
-		if frappe.db.exists("PM KPI Snapshot", {"project": p.name, "snapshot_date": today}):
+		if frappe.db.exists("PM KPI Snapshot", {"project": p.name, "snapshot_date": today
+	}):
 			continue
 		evm = compute_evm_for_project(p.name, today, sync_gl_ac=True)
 		doc = frappe.new_doc("PM KPI Snapshot")

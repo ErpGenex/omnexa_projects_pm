@@ -58,15 +58,26 @@ def execute(filters=None):
 
 def _columns():
 	return [
-		{"label": _("Task"), "fieldname": "name", "fieldtype": "Link", "options": "PM WBS Task", "width": 180},
-		{"label": _("Project Contract"), "fieldname": "project", "fieldtype": "Link", "options": "Project Contract", "width": 180},
-		{"label": _("Task Name"), "fieldname": "task_name", "fieldtype": "Data", "width": 220},
-		{"label": _("Duration (Days)"), "fieldname": "duration_days", "fieldtype": "Int", "width": 120},
-		{"label": _("ES"), "fieldname": "es", "fieldtype": "Int", "width": 70},
-		{"label": _("EF"), "fieldname": "ef", "fieldtype": "Int", "width": 70},
-		{"label": _("LS"), "fieldname": "ls", "fieldtype": "Int", "width": 70},
-		{"label": _("LF"), "fieldname": "lf", "fieldtype": "Int", "width": 70},
-		{"label": _("Total Float"), "fieldname": "total_float", "fieldtype": "Int", "width": 90},
-		{"label": _("Gantt Marker"), "fieldname": "gantt_marker", "fieldtype": "Data", "width": 100},
-		{"label": _("CPM Flag"), "fieldname": "cpm_flag", "fieldtype": "Data", "width": 100},
+		{"label": _("Task"), "fieldname": "name", "fieldtype": "Link", "options": "PM WBS Task", "width": 180
+	},
+		{"label": _("Project Contract"), "fieldname": "project", "fieldtype": "Link", "options": "Project Contract", "width": 180
+	},
+		{"label": _("Task Name"), "fieldname": "task_name", "fieldtype": "Data", "width": 220
+	},
+		{"label": _("Duration (Days)"), "fieldname": "duration_days", "fieldtype": "Int", "width": 120
+	},
+		{"label": _("ES"), "fieldname": "es", "fieldtype": "Int", "width": 70
+	},
+		{"label": _("EF"), "fieldname": "ef", "fieldtype": "Int", "width": 70
+	},
+		{"label": _("LS"), "fieldname": "ls", "fieldtype": "Int", "width": 70
+	},
+		{"label": _("LF"), "fieldname": "lf", "fieldtype": "Int", "width": 70
+	},
+		{"label": _("Total Float"), "fieldname": "total_float", "fieldtype": "Int", "width": 90
+	},
+		{"label": _("Gantt Marker"), "fieldname": "gantt_marker", "fieldtype": "Data", "width": 100
+	},
+		{"label": _("CPM Flag"), "fieldname": "cpm_flag", "fieldtype": "Data", "width": 100
+	},
 	]

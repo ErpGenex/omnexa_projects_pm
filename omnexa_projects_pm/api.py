@@ -18,7 +18,8 @@ def cpm_timeline(project: str | None = None):
 		limit_page_length=5000,
 	)
 	if not tasks:
-		return {"items": []}
+		return {"items": []
+	}
 
 	dependencies = frappe.get_all(
 		"PM Task Dependency",
@@ -45,12 +46,13 @@ def cpm_timeline(project: str | None = None):
 					"end_offset": r["ef"],
 					"float_days": r["total_float"],
 					"is_critical": r["cpm_flag"] == "Critical",
-					"marker": r.get("gantt_marker") or "",
-				}
+					"marker": r.get("gantt_marker") or ""
+	}
 			)
 
 	items.sort(key=lambda x: (x["project"] or "", x["start_offset"], x["id"]))
-	return {"items": items}
+	return {"items": items
+	}
 
 
 @frappe.whitelist()
@@ -58,7 +60,8 @@ def cpm_timeline_calendar(project: str | None = None):
 	offset_data = cpm_timeline(project=project)
 	items = offset_data.get("items", [])
 	if not items:
-		return {"items": []}
+		return {"items": []
+	}
 
 	base_dates = _project_base_dates(project)
 	fallback = getdate()
@@ -73,10 +76,11 @@ def cpm_timeline_calendar(project: str | None = None):
 				**row,
 				"base_date": str(base),
 				"start_date": str(start_date),
-				"end_date": str(end_date),
-			}
+				"end_date": str(end_date)
+	}
 		)
-	return {"items": out}
+	return {"items": out
+	}
 
 
 def _project_base_dates(project: str | None = None) -> dict[str, object]:

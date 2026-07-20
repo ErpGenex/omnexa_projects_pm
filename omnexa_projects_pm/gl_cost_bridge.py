@@ -12,7 +12,8 @@ from frappe.utils import flt, getdate, today
 def get_gl_actual_cost(project_contract: str, as_of_date: str | None = None) -> dict:
 	"""Project-level actual cost from accounting GL sources."""
 	if not project_contract:
-		return {"total": 0.0, "source": "none", "by_cost_code": {}}
+		return {"total": 0.0, "source": "none", "by_cost_code": {}
+	}
 
 	as_of = getdate(as_of_date or today())
 	company = frappe.db.get_value("Project Contract", project_contract, "company")
@@ -49,7 +50,7 @@ def get_gl_actual_cost(project_contract: str, as_of_date: str | None = None) -> 
 		"total": round(total, 2),
 		"source": source,
 		"by_cost_code": {k: round(v, 2) for k, v in by_cost_code.items()},
-		"as_of": str(as_of),
+		"as_of": str(as_of)
 	}
 
 
@@ -90,7 +91,8 @@ def sync_gl_actual_cost_to_wbs(project_contract: str, as_of_date: str | None = N
 		limit_page_length=5000,
 	)
 	if not tasks:
-		return {"updated": 0, "total_ac": total_ac, "source": gl.get("source")}
+		return {"updated": 0, "total_ac": total_ac, "source": gl.get("source")
+	}
 
 	updated = 0
 	if by_cost_code:
@@ -111,7 +113,8 @@ def sync_gl_actual_cost_to_wbs(project_contract: str, as_of_date: str | None = N
 				frappe.db.set_value("PM WBS Task", task.name, "actual_cost", amount, update_modified=False)
 				updated += 1
 
-	return {"updated": updated, "total_ac": total_ac, "source": gl.get("source")}
+	return {"updated": updated, "total_ac": total_ac, "source": gl.get("source")
+	}
 
 
 def _journal_entry_expense_total(project_contract: str, company: str | None, as_of) -> float:
@@ -124,7 +127,8 @@ def _journal_entry_expense_total(project_contract: str, company: str | None, as_
 		return 0.0
 	cost_accounts = frappe.get_all(
 		"Account",
-		filters={"company": company, "root_type": "Expense", "is_group": 0},
+		filters={"company": company, "root_type": "Expense", "is_group": 0
+	},
 		pluck="name",
 		limit=200,
 	)
