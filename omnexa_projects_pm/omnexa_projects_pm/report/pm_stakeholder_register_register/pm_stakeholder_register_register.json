@@ -1,0 +1,20 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "disabled": 0,
+ "doctype": "Report",
+ "filters": [],
+ "is_standard": "Yes",
+ "module": "Omnexa Projects PM",
+ "name": "PM Stakeholder Register Register",
+ "prepared_report": 0,
+ "query": "",
+ "ref_doctype": "PM Stakeholder Register",
+ "report_name": "PM Stakeholder Register Register",
+ "report_type": "Script Report",
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ]
+}

@@ -1,26 +1,16 @@
 {
- "content": null,
- "creation": "2026-08-25 17:59:09.344854",
- "docstatus": 0,
- "doctype": "Page",
- "idx": 0,
- "modified": "2026-08-25 19:03:29.233726",
- "modified_by": "Administrator",
- "module": "Omnexa Projects PM",
- "name": "projects-pm-executive-dashboard",
- "owner": "Administrator",
- "page_name": "projects-pm-executive-dashboard",
- "roles": [
-  {
-   "role": "System Manager"
-  },
-  {
-   "role": "Company Admin"
-  }
- ],
- "script": null,
- "standard": "Yes",
- "style": null,
- "system_page": 0,
- "title": "Executive Dashboard"
+	"doctype": "Page",
+	"module": "Omnexa Projects PM",
+	"name": "projects-pm-executive-dashboard",
+	"page_name": "projects-pm-executive-dashboard",
+	"standard": "Yes",
+	"title": "Executive Dashboard",
+	"roles": [
+		{
+			"role": "System Manager"
+		},
+		{
+			"role": "Company Admin"
+		}
+	]
 }

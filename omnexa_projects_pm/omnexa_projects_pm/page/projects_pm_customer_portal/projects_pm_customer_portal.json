@@ -1,26 +1,16 @@
 {
- "content": null,
- "creation": "2026-08-25 17:59:09.119035",
- "docstatus": 0,
- "doctype": "Page",
- "idx": 0,
- "modified": "2026-08-25 19:03:29.451801",
- "modified_by": "Administrator",
- "module": "Omnexa Projects PM",
- "name": "projects-pm-customer-portal",
- "owner": "Administrator",
- "page_name": "projects-pm-customer-portal",
- "roles": [
-  {
-   "role": "System Manager"
-  },
-  {
-   "role": "Company Admin"
-  }
- ],
- "script": null,
- "standard": "Yes",
- "style": null,
- "system_page": 0,
- "title": "Customer Portal"
+	"doctype": "Page",
+	"module": "Omnexa Projects PM",
+	"name": "projects-pm-customer-portal",
+	"page_name": "projects-pm-customer-portal",
+	"standard": "Yes",
+	"title": "Customer Portal",
+	"roles": [
+		{
+			"role": "System Manager"
+		},
+		{
+			"role": "Company Admin"
+		}
+	]
 }

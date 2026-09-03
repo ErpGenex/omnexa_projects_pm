@@ -1,263 +1,586 @@
-Acceptance Criteria,Acceptance Criteria
-Acceptance Criteria is mandatory when milestone is Completed.,Acceptance Criteria is mandatory when milestone is مكتمل.
-Accountable for monitoring and mitigation actions.,Accountable لـ monitoring و mitigation إجراءات.
+Acceptance Criteria,بند واجهة
+Acceptance Criteria is mandatory when milestone is Completed.,بند واجهة
+Accountable for monitoring and mitigation actions.,بند واجهة
+Accounting,المحاسبة
+Accounts Payable,الذمم الدائنة
+Accounts Receivable,الذمم المدينة
 Actions,إجراءات
-Active ITPs,نشط ITPs
-Actual / Planned %,Actual Planned%
-Actual Cost,Actual تكلفة
-Actual Cost (AC),Actual تكلفة (AC)
-Actual Date,Actual تاريخ
-Actual Date is mandatory when milestone is Completed.,Actual تاريخ is mandatory when milestone is مكتمل.
-Actual Duration (Days),Actual Duration (Days)
-Actual End,Actual نهاية
-Actual h,Actual h
-Actual Hours,Actual Hours
-Actual Start,Actual بداية
-Actual Units,Actual Units
-AEC Suite,AEC Suite
+Active,نشط
+Active ITPs,بند واجهة
+Actual / Planned %,بند واجهة / مخطط %
+Actual Cost,بند واجهة
+Actual Cost (AC),بند واجهة
+Actual Date,بند واجهة
+Actual Date is mandatory when milestone is Completed.,بند واجهة
+Actual Duration (Days),بند واجهة
+Actual End,بند واجهة
+Actual h,بند واجهة
+Actual Hours,بند واجهة
+Actual Start,بند واجهة
+Actual Units,بند واجهة
+Administrator,المسؤول
+Agriculture,الزراعة
+AI & Intelligence,الذكاء الاصطناعي والتحليلات
+All,الكل
+All activities,كل الأنشطة
+All branches,كل الفروع
+ALM,إدارة الأصول والخصوم
+Analytics Dashboard,لوحة التحليلات
 Approval,موافقة
-Approval Date,موافقة تاريخ
-Approved By,معتمد حسب
+Approval Date,موافقة التاريخ
+Approved,معتمد
+Approved By,معتمد By
+Asset Insurance,تأمين الأصول
+Assigned To,مُسند إلى
+Assigned To Me,المُسند إليّ
 At Risk,At مخاطر
-Avg CPI,متوسط CPI
-Avg risk score,متوسط مخاطر درجة
-Avg SPI,متوسط SPI
-Avg weight %,متوسط weight%
-BAC,BAC
-Bars use CPM calendar API (critical path in red). Float (days): hover a bar.,Bars use CPM تقويم API (critical path in red). Float (days): hover a bar.
-Baseline & KPIs,Baseline & KPIs
-Baseline Date,Baseline تاريخ
-Baseline task name for Construction Schedule sync.,Baseline مهمة اسم لـ Construction Schedule sync.
-BOQ Item,BOQ صنف
+Attachments,المرفقات
+Audit,التدقيق
+Avg CPI,بند واجهة
+Avg risk score,بند واجهة
+Avg SPI,بند واجهة
+Avg weight %,بند واجهة
+Balance Sheet,الميزانية العمومية
+Bank Unmatched Statement Lines,بنود كشف بنك غير مطابقة
+Baseline Date,بند واجهة
+Baseline task name for Construction Schedule sync.,بند واجهة
+Billing & collections,الفوترة والتحصيل
+Blocked,بند واجهة
+Bookings & registration,الحجوزات والتسجيل
+BOQ,جدول الكميات
+BOQ Item,جدول الكميات الصنف
 Branch,الفرع
-Budget at Completion (BAC),Budget at Completion (BAC)
-Calendar days added in the CPM forward pass after the predecessor bound (e.g. FS + 2: successor starts 2 days after predecessor finish).,تقويم days added in the CPM forward pass after the predecessor bound (e. g. FS + 2: successor starts 2 days after predecessor finish).
+Budget & cost control,الميزانية وضبط التكلفة
+Budget at Completion (BAC),بند واجهة
+Buy,المشتريات
+Calendar days added in the CPM forward pass after the predecessor bound (e.g. FS + 2: successor starts 2 days after predecessor finish).,بند واجهة
+CAM & recoveries,المصاريف المشتركة والاستردادات
+CAM Budget,ميزانية المصاريف المشتركة
+Campaign ROI,عائد الحملة
+Cancel,إلغاء
+Car Rental,تأجير السيارات
+Card Break,قسم
 Category,الفئة
-Change Title,Change عنوان
-Change Type,Change نوع
-Classification and Ownership,Classification و Ownership
-Classification Code,Classification كود
+Change Title,بند واجهة
+Change Type,بند واجهة
+Chart,مخطط
+Chart of Accounts,دليل الحسابات
+Classification and Ownership,بند واجهة
+Classification Code,رمز التصنيف
+Client,العميل
+Closed,مغلق
+Commission Accrual,استحقاق العمولات
+Commission Schedule,جدول العمولات
+Community,مجتمعي
 Company,الشركة
-Company is required,شركة is required
-Company is required.,شركة is required.
-Company or Project Contract is required,شركة or مشروع عقد is required
-Construction Schedule Baseline is not installed,Construction Schedule Baseline is not installed
-Cost,تكلفة
-Cost and Progress,تكلفة و Progress
-Cost Code,تكلفة كود
-Cost Health,تكلفة صحة
-Cost Impact,تكلفة Impact
-Cost Performance,تكلفة أداء
-Cost Rate,تكلفة معدل
-Cost Variance,تكلفة Variance
-Cost Variance (CV),تكلفة Variance (CV)
-CPI,CPI
-CPM Flag,CPM Flag
-Critical NCRs,Critical NCRs
-Delayed,Delayed
-Deliverable / Output,Deliverable Output
-Dependencies,Dependencies
-Dependencies and Status,Dependencies و حالة
-Dependency Note,Dependency Note
-Dependency Reference,Dependency Reference
-Dependency Type,Dependency نوع
-Depends On Task,Depends On مهمة
+Company is required,الشركة is مطلوب
+Company is required.,الشركة is مطلوب.
+Company or Project Contract is required,بند واجهة
+Completed,مكتمل
+Compliance checks complete,اكتملت فحوصات الامتثال
+Compliance Exceptions,استثناءات الامتثال
+Compliance Exceptions (IFRS),استثناءات الامتثال (IFRS)
+Compliance Exceptions (Tax),استثناءات الامتثال (ضريبي)
+Compliance Exceptions Dashboard,لوحة استثناءات الامتثال
+Compliance Reports,تقارير الامتثال
+Construction,المقاولات
+Construction & Engineering,المقاولات والهندسة
+Construction Schedule Baseline is not installed,بند واجهة
+Consultant,بند واجهة
+Consumer Finance,التمويل الاستهلاكي
+Contractor,بند واجهة
+Core ERP,ERP الأساسي
+Cost,التكلفة
+Cost and Progress,بند واجهة
+Cost Center,مركز التكلفة
+Cost Code,التكلفة الرمز
+Cost Health,بند واجهة
+Cost Impact,بند واجهة
+Cost Performance,بند واجهة
+Cost Rate,التكلفة السعر
+Cost Variance,بند واجهة
+Cost Variance (CV),بند واجهة
+Country,الدولة
+CPI,بند واجهة
+CPM Flag,بند واجهة
+Create,إنشاء
+Create or review your first **PM Milestone** record from this workspace.,أنشئ أو راجع أول سجل **PM — بند واجهة** من مساحة العمل هذه.
+Create or review your first **PM Program** record from this workspace.,أنشئ أو راجع أول سجل **PM — بند واجهة** من مساحة العمل هذه.
+Create or review your first **PM WBS Task** record from this workspace.,أنشئ أو راجع أول سجل **PM — بند واجهة** من مساحة العمل هذه.
+Create or review your first **Project Contract** record from this workspace.,أنشئ أو راجع أول سجل **بند واجهة** من مساحة العمل هذه.
+Create or review your first **User Branch Access** record from this workspace.,أنشئ أو راجع أول سجل **مستخدم الفرع الوصول** من مساحة العمل هذه.
+Credit Engine,محرك الائتمان
+Credit Risk,مخاطر الائتمان
+Critical,حرج
+Critical NCRs,بند واجهة
+CRM,إدارة العملاء
+Cross-module operations,عمليات متكاملة
+Currency,العملة
+Custom Documents,المستندات المخصصة
+Customer,العميل
+Customer Portal,العميل بوابة
+Dashboard,لوحة معلومات
+Delayed,بند واجهة
+Delete,حذف
+Deliverable / Output,بند واجهة / بند واجهة
+Dependencies,بند واجهة
+Dependencies and Status,بند واجهة
+Dependency Note,بند واجهة
+Dependency Reference,بند واجهة
+Dependency Type,بند واجهة
+Depends On Task,بند واجهة
 Description,الوصف
-Description is mandatory before closing an issue.,وصف is mandatory before closing an issue.
+Description is mandatory before closing an issue.,بند واجهة
+Design & quantities (BOQ),التصميم والكميات (جدول الكميات)
+Desk,المكتب
 Details,التفاصيل
+Development Budget,ميزانية التطوير
+Development Project,مشروع تطوير
+Development Project Register,سجل مشاريع التطوير
+Development project register,سجل مشاريع التطوير
+Documents & Integration,المستندات والتكامل
+Draft,مسودة
 Due Date,تاريخ الاستحقاق
-Due Date is mandatory while issue is not closed.,استحقاق تاريخ is mandatory while issue is not مغلق.
-Duration (Days),Duration (Days)
-"e.g. hours, days, ton, shift.","e. g. hours, days, ton, shift."
-Earned Value (EV),Earned Value (EV)
-Earned Value Metrics,Earned Value Metrics
+Due Date is mandatory while issue is not closed.,بند واجهة
+Duration (Days),بند واجهة
+E-Invoice,الفاتورة الإلكترونية
+"e.g. hours, days, ton, shift.",بند واجهة
+Earned Value (EV),EV — بند واجهة
+Earned Value Metrics,بند واجهة
+Edit,تعديل
+Education,التعليم
 EF,EF
 Email,البريد الإلكتروني
-Engagement Strategy,Engagement Strategy
-Engineering Stage,هندسة Stage
-"Equipment ID, material description, or external person name.","Equipment معرف, material وصف, or external person اسم."
+Engagement Strategy,بند واجهة
+Engineering Consulting,الاستشارات الهندسية
+Equipment,بند واجهة
+"Equipment ID, material description, or external person name.",ID — بند واجهة
+Erpgenex Property Mgmt,إدارة العقارات
+Erpgenex Realestate Dev,التطوير العقاري
+Erpgenex Realestate Sales,التسويق العقاري
+ERPGENEX · Projects PM,PM — بند واجهة
+ERPGENEX — Core ERP,ERPGENEX — ERP الأساسي
+ERPGENEX — Dashboard,ERPGENEX — لوحة المعلومات
 ES,ES
-Estimate At Completion (EAC),Estimate At Completion (EAC)
-Estimate to Complete (ETC),Estimate إلى Complete (ETC)
-EVM fields updated from WBS tasks.,EVM fields updated from WBS tasks.
-Execution,Execution
-Failed Inspections,فشل Inspections
-Filters,Filters
-Float,Float
-"For delayed milestones, provide Actual Date or Acceptance Criteria note for traceability.","لـ delayed milestones, provide Actual تاريخ or Acceptance Criteria note لـ traceability."
-"For Human resources, set User or Resource Name.","لـ Human resources, set مستخدم or Resource اسم."
-Forecast,Forecast
-From,From
-From Date,From تاريخ
-Further,Further
-Gantt Marker,Gantt Marker
-Hours cannot be negative.,Hours cannot be negative.
-Impact %,Impact%
-Impact Analysis (PMBOK Change),Impact Analysis (PMBOK Change)
-Impact Area,Impact Area
-Influence,Influence
-Interest,Interest
-Internal person when resource is Human.,Internal person when resource is Human.
-ISO 21500 stakeholder engagement plan entry.,ISO 21500 stakeholder engagement خطة قيد.
-Issue Title,Issue عنوان
-Issues,Issues
-Lag (Days),Lag (Days)
-Leave empty to show all projects with schedule data.,Leave empty إلى show all مشاريع with schedule بيانات.
+Escalated,بند واجهة
+Escalation Rule,قاعدة تصعيد الإيجار
+Estimate At Completion (EAC),بند واجهة
+Estimate to Complete (ETC),بند واجهة
+Event,حدث
+Executive Dashboard,لوحة المدير التنفيذية
+Explore this workspace,استكشف مساحة العمل
+Factoring,التخصيم
+Failed Inspections,بند واجهة
+FF,FF
+Field PWA,تطبيق الميدان
+Filters,المرشحات
+Finance Control Exceptions,استثناءات الضوابط المالية
+Finance Control Violations,مخالفات الضوابط المالية
+Finance Controls,الضوابط المالية
+Finance Desk,بند واجهة
+Finance Engine,محرك التمويل
+Finance Group,المجموعة المالية
+Finance SoD Blocks,حظر فصل المهام (SoD)
+Finance Workcenter,مركز عمل المالية
+Fixed Assets,الأصول الثابتة
+"For delayed milestones, provide Actual Date or Acceptance Criteria note for traceability.",بند واجهة
+"For Human resources, set User or Resource Name.",بند واجهة
+Forecast,بند واجهة
+Form,نموذج
+From,من
+From Date,من التاريخ
+FS,FS
+Further,المزيد
+Gantt Marker,بند واجهة
+General Ledger,دفتر الأستاذ العام
+Get started with PM Milestone,PM — بند واجهة
+Get started with PM Program,PM — بند واجهة
+Get started with PM WBS Task,PM — بند واجهة
+Get started with Project Contract,بند واجهة
+Get started with User Branch Access,بند واجهة
+GL Account,حساب GL
+Global Defaults,الإعدادات العامة
+Governance,الحوكمة
+Governance Overview,نظرة عامة على الحوكمة
+Guest,زائر
+Handover & defects (snagging),التسليم والعيوب
+Handover Package,حزمة التسليم
+Healthcare,الرعاية الصحية
+Help,مساعدة
+High,مرتفع
+Home,الرئيسية
+Hours cannot be negative.,بند واجهة
+HR,الموارد البشرية
+Human,بند واجهة
+IFRS 16 Liability,التزام الإيجار IFRS 16
+Impact %,بند واجهة
+Impact Analysis (PMBOK Change),بند واجهة
+Impact Area,بند واجهة
+Implemented,بند واجهة
+In Progress,قيد التنفيذ
+Inactive,غير نشط
+Industry Solutions,حلول القطاعات
+Influence,بند واجهة
+Insights,رؤى وتحليلات
+Interest,بند واجهة
+Internal person when resource is Human.,بند واجهة
+Inventory & development context,المخزون وسياق التطوير
+Inventory KPI Dashboard,لوحة مؤشرات المخزون
+Inventory KPIs,مؤشرات المخزون
+Inventory Low Stock Items,أصناف منخفضة المخزون
+Inventory Reorder Needed,أصناف تحتاج إعادة طلب
+Inventory Stock Items,أصناف المخزون
+ISO 21500 stakeholder engagement plan entry.,ISO — بند واجهة
+Issue Title,بند واجهة
+Issues,بند واجهة
+Item,الصنف
+Journal Entry,قيد يومية
+Jump to the **PM Schedule (Gantt)** page.,انتقل إلى صفحة **PM — بند واجهة**.
+Jump to the **Portfolio Dashboard** page.,انتقل إلى صفحة **لوحة بند واجهة**.
+Lag (Days),بند واجهة
+Land & project charter,الأرض وميثاق المشروع
+Land Parcel,قطعة أرض
+Language,اللغة
+Last Month,الشهر الماضي
+Last Week,الأسبوع الماضي
+Lead acquisition & qualification,اكتساب العملاء وتأهيلهم
+Leasing & occupancy (IFRS 16 / IPSAS rent),التأجير والإشغال (IFRS 16 / IPSAS)
+Leasing Finance,التمويل التأجيري
+Leasing Mandate,تفويض تأجير
 LF,LF
-Links WBS to BOQ/GL cost allocation.,Links WBS إلى BOQ GL تكلفة allocation.
-Load omnexa_core vertical portal desk,Load omnexa أساسي vertical بوابة desk
-Load omnexa_core vertical workcenter kit,Load omnexa أساسي vertical workcenter kit
-Load schedule,Load schedule
+Links WBS to BOQ/GL cost allocation.,BOQ GL — بند واجهة
+List,قائمة
+Login,تسجيل الدخول
+Logout,تسجيل الخروج
+Low,منخفض
+Lower number = higher priority across the enterprise portfolio.,بند واجهة
+Lower number = higher priority within the program.,بند واجهة
 LS,LS
-Maps this WBS node to a named deliverable or output (ISO 21500 / PMBOK).,Maps this WBS node إلى a named deliverable or output (ISO 21500 PMBOK).
-Milestone Name,Milestone اسم
-Milestones,Milestones
-Mitigation Plan,Mitigation خطة
-Mitigation Plan is mandatory before closing a risk.,Mitigation خطة is mandatory before closing a مخاطر.
-Mitigation Plan is mandatory for open/mitigated risks.,Mitigation خطة is mandatory لـ مفتوح mitigated risks.
-Next Review Date,Next Review تاريخ
-Next Review Date is mandatory for open/mitigated risks.,Next Review تاريخ is mandatory لـ مفتوح mitigated risks.
-"No timeline rows. Select a project and click Sync WBS from BOQ, or add PM WBS tasks with planned dates.","No timeline rows. Select a مشروع و click Sync WBS from BOQ, or إضافة PM WBS tasks with planned dates."
-Normalized effort for loading views (optional if using units only).,Normalized effort لـ loading views (optional if using units only).
-Notes,Notes
-Omnexa Projects PM,Omnexa مشاريع PM
-On Track,On Track
-Open Changes,مفتوح Changes
-Open Inspections,مفتوح Inspections
-Open NCRs,مفتوح NCRs
-Optional link to a WBS task (schedule / deliverable driver).,Optional link إلى a WBS مهمة (schedule deliverable driver).
-Optional link to the WBS node this milestone tracks.,Optional link إلى the WBS node this milestone tracks.
-Optional task this allocation supports.,Optional مهمة this allocation supports.
-Optional WBS task affected by this issue.,Optional WBS مهمة affected حسب this issue.
-Organization,Organization
+Maintenance — service requests,الصيانة — طلبات الخدمة
+Management Agreement,اتفاقية إدارة
+Manufacturing,التصنيع
+Maps this WBS node to a named deliverable or output (ISO 21500 / PMBOK).,ISO — بند واجهة / بند واجهة
+Material,بند واجهة
+Medium,متوسط
+Menu,القائمة
+Milestone Name,بند واجهة
+Milestones,بند واجهة
+Mitigated,بند واجهة
+Mitigation Plan,بند واجهة
+Mitigation Plan is mandatory before closing a risk.,بند واجهة
+Mitigation Plan is mandatory for open/mitigated risks.,بند واجهة
+Mortgage Finance,التمويل العقاري
+My work,عملي
+Name,الاسم
+New,جديد
+Next Review Date,التالي مراجعة التاريخ
+Next Review Date is mandatory for open/mitigated risks.,بند واجهة
+None,لا شيء
+Normalized effort for loading views (optional if using units only).,بند واجهة
+Not Synced,بند واجهة
+Notes,ملاحظات
+Notifications,الإشعارات
+Number Card,بطاقة رقمية
+Occupancy,الإشغال
+Omnexa Accounting Settings,إعدادات محاسبة Omnexa
+Omnexa Marketplace Settings,إعدادات سوق Omnexa
+Omnexa Purchase Settings,إعدادات مشتريات Omnexa
+Omnexa Sales Settings,إعدادات مبيعات Omnexa
+Omnexa Settings,إعدادات Omnexa
+Omnexa Stock Settings,إعدادات مخزون Omnexa
+On Budget,بند واجهة
+On Hold,بند واجهة
+On Track,On مسار
+Open,مفتوح
+Open Inspections,بند واجهة
+Open NCRs,بند واجهة
+Open PM Schedule (Gantt),PM — بند واجهة
+Open Portfolio Dashboard,لوحة بند واجهة
+Open report Compliance Exceptions Dashboard,فتح تقرير لوحة استثناءات الامتثال
+Operating Scenarios,سيناريوهات التشغيل
+Operational Risk,المخاطر التشغيلية
+Operations Desk,بند واجهة
+Optional link to a WBS task (schedule / deliverable driver).,بند واجهة / بند واجهة
+Optional link to the WBS node this milestone tracks.,بند واجهة
+Optional task this allocation supports.,بند واجهة
+Optional WBS task affected by this issue.,بند واجهة
+Organization,بند واجهة
+Other,أخرى
+Over Budget,بند واجهة
+Overdue,متأخر
 Overview,نظرة عامة
-Owner,Owner
-Owner is mandatory before closing an issue.,Owner is mandatory before closing an issue.
-Owner is mandatory while issue is not closed.,Owner is mandatory while issue is not مغلق.
-Parent Task,Parent مهمة
-Phone,Phone
-Planned Budget,Planned Budget
-Planned Cost,Planned تكلفة
-Planned Date,Planned تاريخ
-Planned Duration (Days),Planned Duration (Days)
-Planned End,Planned نهاية
-Planned h,Planned h
-Planned Hours,Planned Hours
-Planned review for treatment effectiveness (ISO 31000 / risk process).,Planned review لـ treatment effectiveness (ISO 31000 مخاطر process).
-Planned Start,Planned بداية
-Planned Units,Planned Units
-Planned Value (PV),Planned Value (PV)
-Planning & Risk,Planning & مخاطر
-Planning Units,Planning Units
-PM Baseline Snapshot,PM Baseline لقطة
-PM Change Request,PM Change طلب
-PM Compliance (ISO 21500 / PMBOK),PM امتثال (ISO 21500 PMBOK)
-PM CPM Groundwork,PM CPM Groundwork
-PM Issue Log,PM Issue سجل
+Owner,المالك
+Owner is mandatory before closing an issue.,بند واجهة
+Owner is mandatory while issue is not closed.,بند واجهة
+Owner reporting & trust accounting,تقارير الملاك والحسابات الائتمانية
+Owner Statement,كشف حساب المالك
+P6 Activity ID,P6 النشاط المعرّف
+P6 Activity Object ID,ID — بند واجهة
+P6 Last Sync,بند واجهة
+P6 Sync Status,بند واجهة
+Parent Task,بند واجهة
+Payment Entry,سند قبض/صرف
+Payment Plan Item,بند خطة السداد
+Pending,قيد الانتظار
+Permit Milestone,معلم التصريح
+Phone,الهاتف
+Planned,مخطط
+Planned Budget,بند واجهة
+Planned Cost,مخطط التكلفة
+Planned Date,التاريخ المخطط
+Planned Duration (Days),بند واجهة
+Planned End,مخطط النهاية
+Planned h,مخطط h
+Planned Hours,بند واجهة
+Planned review for treatment effectiveness (ISO 31000 / risk process).,ISO — بند واجهة / بند واجهة
+Planned Start,مخطط بدء
+Planned Units,بند واجهة
+Planned Value (PV),بند واجهة
+Planning Units,بند واجهة
+Platform & Administration,المنصة والإدارة
+PM,PM
+PM Baseline Snapshot,PM — بند واجهة
+PM Baseline Snapshot Register,سجل PM — بند واجهة
+PM Change Request,PM — بند واجهة
+PM Change Request Register,سجل PM — بند واجهة
+PM CPM Groundwork,PM — بند واجهة
+PM Issue Log,PM — بند واجهة
+PM Issue Log Register,سجل PM — بند واجهة
+PM Issue Log Summary,ملخص PM — بند واجهة
 PM KPI Snapshot,PM KPI لقطة
-PM Milestone,PM Milestone
-PM Portfolio Dashboard,PM Portfolio لوحة معلومات
-PM Program,PM Program
-PM Program Project,PM Program مشروع
-PM Resource Assignment,PM Resource Assignment
-PM Resource Loading,PM Resource Loading
-PM Schedule (Gantt),PM Schedule (Gantt)
-PM Stakeholder Register,PM Stakeholder Register
-PM Task Dependency,PM مهمة Dependency
-PM WBS Task,PM WBS مهمة
-Portfolio Priority,Portfolio Priority
-Portfolio SPI,Portfolio SPI
-Portfolio Weight,Portfolio Weight
-Posting,Posting
-Priority Rank,Priority Rank
-Probability %,Probability%
-Program Manager,Program مدير
-Program Projects,Program مشاريع
-Program Title,Program عنوان
-Progress %,Progress%
-Project,مشروع
-Project Contract,مشروع عقد
-Project Contract is required,مشروع عقد is required
-Project Contract is required.,مشروع عقد is required.
-Project is required,مشروع is required
-Project Reports,تقارير المشاريع
-Project {0} appears more than once in this program.,مشروع { 0 } appears more than once in this program.
-Projects,مشاريع
-projects,مشاريع
-Projects PM Workcenter,مشاريع PM Workcenter
-projects-pm-analytics-dashboard,مشاريع - pm - تحليلات - لوحة معلومات
-projects-pm-customer-portal,مشاريع - pm - عميل - بوابة
-projects-pm-executive-dashboard,مشاريع - pm - تنفيذي - لوحة معلومات
-projects-pm-finance-desk,مشاريع - pm - مالية - desk
-projects-pm-operations-desk,مشاريع - pm - عمليات - desk
-Quality Score,جودة درجة
-Recalculate PV / EV / AC from WBS,Recalculate PV EV AC from WBS
-Refresh,Refresh
-Related WBS Task,Related WBS مهمة
-Reporting Tag,Reporting Tag
-Request Date,طلب تاريخ
-Requested By,Requested حسب
-Resource,Resource
-Resource Name,Resource اسم
-Resource Type,Resource نوع
-Resources,Resources
-Risk Impact,مخاطر Impact
-Risk Owner,مخاطر Owner
-Risk Owner is mandatory for open/mitigated risks.,مخاطر Owner is mandatory لـ مفتوح mitigated risks.
-Risk Register,مخاطر Register
-Risk Score,مخاطر درجة
-Risk Title,مخاطر عنوان
-Risks,Risks
+PM KPI Snapshot Register,سجل PM KPI لقطة
+PM KPI Snapshot Summary,ملخص PM KPI لقطة
+PM Milestone,PM — بند واجهة
+PM Milestone Register,سجل PM — بند واجهة
+PM Milestone Summary,ملخص PM — بند واجهة
+PM Portfolio Dashboard,لوحة PM — بند واجهة
+PM Program,PM — بند واجهة
+PM Program Project,PM — بند واجهة
+PM Program Register,سجل PM — بند واجهة
+PM Quality QHSE Summary,ملخص PM الجودة QHSE
+PM Resource Assignment,PM — بند واجهة
+PM Resource Assignment Register,سجل PM — بند واجهة
+PM Resource Loading,PM — بند واجهة
+PM Risk Register Summary,ملخص سجل PM مخاطر
+PM Schedule (Gantt),PM — بند واجهة
+PM Stakeholder Register,سجل PM — بند واجهة
+PM Stakeholder Register Register,سجل سجل PM — بند واجهة
+PM Task Dependency,PM — بند واجهة
+PM WBS Task,PM — بند واجهة
+PMC Lease Liability Schedule,جدول التزام الإيجار IFRS 16
+PMC Leasing Mandate,تفويض تأجير
+PMC Management Agreement,اتفاقية إدارة
+PMC Management Fee Summary,ملخص رسوم الإدارة
+PMC Occupancy Summary,ملخص الإشغال
+PMC Owner Statement,كشف حساب المالك
+PMC Owner Statement Register,سجل كشوف الملاك
+PMC Property,عقار
+PMC Property Unit,وحدة عقارية
+PMC Rent Aging,أعمار الإيجارات
+PMC Rent Billing Register,سجل فوترة الإيجار
+PMC Rent Roll,سجل الإيجارات
+PMC Rental Contract Register,سجل عقود الإيجار
+Portfolio & asset registry,المحفظة وسجل الأصول
+Portfolio Priority,بند واجهة
+Portfolio Weight,بند واجهة
+Posting,ترحيل
+Priority Rank,الأولوية الترتيب
+Probability %,بند واجهة
+Profile,الملف الشخصي
+Profit and Loss,الأرباح والخسائر
+Program Manager,بند واجهة
+Program Projects,بند واجهة
+Program Title,بند واجهة
+Progress %,بند واجهة
+Project Contract,بند واجهة
+Project Contract is required,بند واجهة
+Project Contract is required.,بند واجهة
+Project EV,القيمة المكتسبة للمشروع
+Project is required,بند واجهة
+Project Manager,بند واجهة
+Project {0} appears more than once in this program.,بند واجهة
+Projects,بند واجهة
+projects,بند واجهة
+Projects & Services,المشاريع والخدمات
+Projects PM,إدارة المشاريع
+Projects PM Workcenter,PM — بند واجهة
+Property,عقار
+Property Management,إدارة العقارات
+Property Sales Booking Register,سجل حجوزات البيع
+Property Sales Lead,عميل مبيعات عقارية
+Purchase Invoice,فاتورة شراء
+Purchase Register,سجل المشتريات
+Quality,الجودة
+Quality Score,بند واجهة
+RE BOQ,جدول كميات التطوير
+RE Development,التطوير العقاري
+RE Handover Package,حزمة التسليم
+RE Marketing,التسويق العقاري
+RE Permit Milestone,معلم التصريح
+RE Project EV,القيمة المكتسبة للمشروع
+RE Subcontract Commitment,التزام مقاول باطن
+RE Unit Inventory,مخزون وحدات التطوير
+RE unit inventory (sales),مخزون وحدات البيع
+RE Unit Inventory Overview,نظرة عامة على مخزون الوحدات
+Real Estate,العقارات
+Refresh,تحديث
+Regulator,بند واجهة
+Rejected,مرفوض
+Related WBS Task,بند واجهة
+Reload,إعادة تحميل
+Rent Aging,أعمار الإيجارات
+Rent billing register,سجل فوترة الإيجار
+Rent Billing Run,تشغيل فوترة الإيجار
+Rent Roll,سجل الإيجارات
+Rental Contract,عقد إيجار
+Rental contract register,سجل عقود الإيجار
+Report,تقرير
+Reporting Tag,وسم التقرير
+Request Date,بند واجهة
+Requested By,بند واجهة
+Reservation register,سجل الحجوزات
+Reservations & unit holds,الحجوزات وحجز الوحدات
+Resource,بند واجهة
+Resource Name,بند واجهة
+Resource Type,بند واجهة
+Restaurant,المطاعم
+"Return here for shortcuts, charts, and lists for **Audit & Compliance**.",ارجع هنا للاختصارات والمخططات والقوائم لـ **التدقيق والامتثال**.
+"Return here for shortcuts, charts, and lists for **Core ERP**.",ارجع هنا للاختصارات والمخططات والقوائم لـ **ERP الأساسي**.
+"Return here for shortcuts, charts, and lists for **Projects PM**.",ارجع هنا للاختصارات والمخططات والقوائم لـ **إدارة المشاريع**.
+"Return here for shortcuts, charts, and lists for **Projects**.",ارجع هنا للاختصارات والمخططات والقوائم لـ **بند واجهة**.
+Risk Impact,بند واجهة
+Risk Owner,مخاطر المالك
+Risk Owner is mandatory for open/mitigated risks.,بند واجهة
+Risk Register,سجل مخاطر
+Risk Score,بند واجهة
+Risk Title,مخاطر العنوان
+Risks,بند واجهة
 Role,الدور
-Schedule,Schedule
-Schedule Baseline Ref,Schedule Baseline Ref
-Schedule Health,Schedule صحة
-Schedule Impact (Days),Schedule Impact (Days)
-Schedule Integration,Schedule تكامل
-Schedule link,Schedule link
-Schedule Performance,Schedule أداء
-Schedule Variance (Days),Schedule Variance (Days)
-Schedule Variance (SV),Schedule Variance (SV)
-Schedule Window,Schedule Window
-Scope Impact,Scope Impact
-Select a Project Contract first.,Select a مشروع عقد first.
-Sequence,Sequence
-"Set Resource Name for equipment, material, or other types.","Set Resource اسم لـ equipment, material, or other types."
-Set {0} before linking a PM WBS Task.,Set { 0 } before linking a PM WBS مهمة.
-Severity,Severity
-Snapshot Date,لقطة تاريخ
-Snapshot Reference,لقطة Reference
-Snapshots,Snapshots
-SPI,SPI
-Stakeholder Name,Stakeholder اسم
+Safety,السلامة
+Sales Booking,حجز بيع
+Sales booking register,سجل حجوزات البيع
+Sales Commission Accrual,استحقاق عمولات المبيعات
+Sales Commission Schedule,جدول عمولات المبيعات
+Sales Invoice,فاتورة مبيعات
+Sales Lead,عميل محتمل
+Sales Portal,بوابة المبيعات
+Sales Register,سجل المبيعات
+Save,حفظ
+Schedule,الجدول
+Schedule Baseline Ref,بند واجهة
+Schedule Health,بند واجهة
+Schedule Impact (Days),بند واجهة
+Schedule Integration,الجدول تكامل
+Schedule link,الجدول رابط
+Schedule Performance,بند واجهة
+Schedule Variance (Days),بند واجهة
+Schedule Variance (SV),بند واجهة
+Schedule Window,بند واجهة
+Scope,بند واجهة
+Scope Impact,بند واجهة
+Search or type a command,ابحث أو اكتب أمرًا
+Search or type a command ({0}),ابحث أو اكتب أمرًا ({0})
+Sell,المبيعات
+Sequence,بند واجهة
+Services,الخدمات
+"Set Resource Name for equipment, material, or other types.",بند واجهة
+Set {0} before linking a PM WBS Task.,PM — بند واجهة
+Settings,الإعدادات
+Severity,الشدة
+SF,SF
+Shortcut,اختصار
+SME Microfinance,التمويل متناهي الصغر
+SME Retail Finance,تمويل المنشآت والتجزئة
+Snapshot Date,لقطة التاريخ
+Snapshot Reference,لقطة المرجع
+Snapshots,بند واجهة
+SPI,بند واجهة
+Sponsor,بند واجهة
+SS,SS
+Stakeholder Name,بند واجهة
 Status,الحالة
-Strategic Objective,Strategic Objective
-Strategic Score,Strategic درجة
-Sum of actual cost on WBS tasks (enter project actuals on tasks; GL integration is a future phase).,Sum of actual تكلفة on WBS tasks (enter مشروع actuals on tasks; GL تكامل is a future phase).
-Sum of WBS planned cost (PMBOK BAC).,Sum of WBS planned تكلفة (PMBOK BAC).
-Sync WBS from BOQ,Sync WBS from BOQ
+Stock,المخزون
+Strategic Objective,بند واجهة
+Strategic Score,بند واجهة
+Subcontract,مقاول باطن
+Submit,إرسال
+Sum of (planned cost * progress percent) on WBS tasks.,بند واجهة
+Sum of actual cost on WBS tasks (enter project actuals on tasks; GL integration is a future phase).,GL — بند واجهة
+Sum of WBS planned cost (PMBOK BAC).,بند واجهة
+Supplier,المورد
+Supporting Attachment,مرفق داعم
+Sync Failed,بند واجهة
+Synced,بند واجهة
+System Manager,مدير النظام
 Task,مهمة
-Task Name,مهمة اسم
-Tasks have offsets but no calendar dates. Set baseline or planned_start on WBS tasks.,Tasks have offsets but no تقويم dates. Set baseline or planned بداية on WBS tasks.
-TCPI (BAC),TCPI (BAC)
-Time-phased planned value from WBS planned dates and planned cost (daily snapshot job rolls up from tasks).,Time - phased planned value from WBS planned dates و planned تكلفة (يومي لقطة job rolls up from tasks).
+Task List,قائمة المهام
+Task Name,مهمة الاسم
+TCPI (BAC),بند واجهة
+This Month,هذا الشهر
+This Week,هذا الأسبوع
+Time-phased planned value from WBS planned dates and planned cost (daily snapshot job rolls up from tasks).,بند واجهة
+Timezone,المنطقة الزمنية
 Title,العنوان
 To,إلى
-To Date,إلى تاريخ
-To Date cannot be before From Date.,إلى تاريخ cannot be before From تاريخ.
-Total Float,إجمالي Float
+To Date,إلى التاريخ
+To Date cannot be before From Date.,بند واجهة
+Today,اليوم
+ToDo,مهمة
+Total Float,بند واجهة
+Tourism,السياحة
+Trading,التجارة
+Trading & Manufacturing,التجارة والتصنيع
+Trial Balance,ميزان المراجعة
 Type,النوع
-Unassigned,Unassigned
-Unit of Measure,Unit of Measure
-Units cannot be negative.,Units cannot be negative.
-User,المستخدم
-Variance at Completion (VAC),Variance at Completion (VAC)
-Variances & Health,Variances & صحة
-WBS Sync,WBS Sync
-WBS Task,WBS مهمة
-Weight %,Weight%
-XER content is required,XER content is required
-{0} belongs to a different Project Contract.,{ 0 } belongs إلى a different مشروع عقد.
+Unassigned,بند واجهة
+Under Review,قيد المراجعة
+Unit,وحدة
+Unit Inventory,مخزون الوحدات
+Unit inventory & sales readiness,مخزون الوحدات وجاهزية البيع
+Unit inventory overview,نظرة عامة على مخزون الوحدات
+Unit of Measure,بند واجهة
+Unit Reservation,حجز وحدة
+Unit Reservation Register,سجل حجز الوحدات
+Units cannot be negative.,بند واجهة
+Update,تحديث
+User,مستخدم
+Variance at Completion (VAC),بند واجهة
+Variances & Health,بند واجهة و بند واجهة
+Vehicle Finance,تمويل المركبات
+Warehouse,المستودع
+WBS Sync,بند واجهة
+WBS Task,بند واجهة
+Weight %,بند واجهة
+Workspace,مساحة العمل
+Workspaces,مساحات العمل
+XER content is required,بند واجهة
+Yesterday,أمس
+You are ready to work in Core ERP.,أنت جاهز للعمل في ERP الأساسي.
+{0} belongs to a different Project Contract.,بند واجهة
 Σ AC,AC
 Σ EV,EV
 Σ PV,PV
+✅ Handover,✅ التسليم
+🎯 CRM,🎯 إدارة العملاء
+🏗️ Projects,🏗️ المشاريع
+🏢 Organization,🏢 التنظيم والإعداد
+🏢 Organization & Setup,🏢 التنظيم والإعداد
+🏢 Portfolio,🏢 المحفظة العقارية
+👥 HR & Users,👥 الموارد البشرية والمستخدمون
+💰 Billing · Finance · ERP,💰 الفوترة · المالية · ERP
+💰 Commissions,💰 العمولات
+💰 Finance & ERP,💰 المالية · ERP
+💰 Owner & CAM,💰 المالك والمصاريف المشتركة
+📈 Reports,📈 التقارير
+📊 Analytics,📊 التحليلات
+📊 Dashboards,📊 لوحات المعلومات
+📊 Dashboards & Portals,📊 لوحات المعلومات والبوابات
+📊 Dashboards & portals,📊 لوحات المعلومات والبوابات
+📋 Commercial,📋 التجاري
+📋 Leasing,📋 التأجير
+📋 Operations,📋 العمليات
+📐 BOQ & inventory,📐 جدول الكميات والمخزون
+📦 Inventory & Supply,📦 المخزون والتوريد
+🔗 Integration,🔗 التكامل
+🚚 Field operations,🚚 العمليات الميدانية
+🛡️ Compliance,🛡️ الامتثال
